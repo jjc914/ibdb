@@ -70,7 +70,7 @@
 
 - [ ] Paper 3 prompts HL
 
-### Psyc
+### Psychology 
 
 - [ ] SAQ HL
 - [ ] SAQ SL
@@ -82,3 +82,14 @@
 
 - [ ] Listening 
 - [ ] Sight Reading
+
+### Processing stuff
+- [ ] fuck me this is going to be difficult
+
+### Firestore
+- [ ] Upload sorted data to firestore 
+
+
+## Done 
+
+- [x] ~~init firestore~~ -@TheArctesian
