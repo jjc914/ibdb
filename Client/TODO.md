@@ -1,23 +1,26 @@
 # Client 
 
-### init
-- [ ] init sveltekit 
-- [ ] init firebase 
+### Init
+- [ ] Init sveltekit 
+- [ ] Init firebase 
 
 ### Functions
-- [ ] user auth
-- [ ] user info set
-- [ ] random questions
-- [ ] get questions for subject
-- [ ] get leaderboard
+- [ ] User auth
+- [ ] User info set
+- [ ] Random questions
+- [ ] Get questions for subject
+- [ ] Get leaderboard
 
+### Classification
+- [ ] Convert database images to PDF
+- [ ] Split PDF into individual questions
+- [ ] Read individual question to classify question type
 
 ### Pages
-- [ ] login page
-- [ ] user info page
+- [ ] Login page
+- [ ] User info page
 - [ ] Get Questions page
 - [ ] Random Question page
 - [ ] Leaderboard
-
 
 ## Done 
