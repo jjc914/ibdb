@@ -35,12 +35,12 @@ Format:
 <br>
 <strong>Description: </strong> did it 
 
-<strong>Name: </strong><em>Josh</em> 
+<strong>Name: </strong>Josh
 <br>
 <strong>Time: </strong>  <em>5:20-5:30</em> 
 <br>
 <strong>Date: </strong>  <em>9.2.22</em> 
 <br>
-<strong>Goal: </strong> <em>Setup</em> 
+<strong>Goal: </strong> Setup
 <br>
-<strong>Description: </strong> <em>Research + prep: https://blog.aspose.com/2021/06/14/convert-image-to-searchable-pdf-file-with-ocr-using-cpp/</em>
+<strong>Description: </strong> Research + prep: https://blog.aspose.com/2021/06/14/convert-image-to-searchable-pdf-file-with-ocr-using-cpp/
