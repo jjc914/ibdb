@@ -1,0 +1,61 @@
+{
+    "physicsHL" : [
+        {
+            "paper1" : [
+                {
+                    "mechanics" : [
+                        {
+                            "id" : "id",
+                            "photoUrl" : "http://",
+                            "answer" : "http://"
+                        },
+                        {
+                            "id" : "id",
+                            "photoUrl" : "http://",
+                            "answer" : "http://"
+                        }
+                    ]
+                }
+            ],
+            "paper2"
+        } 
+    ]
+}
+
+
+// or could
+
+{
+    "physicsHL" : [
+        {
+            "paper1" : [
+                {
+                    "id" : "id",
+                    "topic" : "topic",
+                    "photoUrl" : "http://",
+                    "answer" : "http://"
+                }    
+                {
+                    "id" : "id",
+                    "topic" : "topic",
+                    "photoUrl" : "http://",
+                    "answer" : "http://"
+                }            
+            ],
+            "paper2" : [
+                {
+                    "id" : "id",
+                    "topic" : "topic",
+                    "photoUrl" : "http://",
+                    "answer" : "http://"
+                }        
+                {
+                    "id" : "id",
+                    "topic" : "topic",
+                    "photoUrl" : "http://",
+                    "answer" : "http://"
+                }        
+            ]
+        } 
+    ]
+}
