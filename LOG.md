@@ -24,3 +24,13 @@ Format:
 <strong>Goal: </strong> Set up file structure, Make TODOs, Init Sveltekit 
 <br>
 <strong>Description: </strong> Fuck me that took a long time to write all that shit down. I inited svelte kit wrote the todo's as well as wrote instruction for Josh to edit the frontend
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>16:30-17:10</em> 
+<br>
+<strong>Date: </strong>  <em>9.2.22</em> 
+<br>
+<strong>Goal: </strong> Update TODO roles and sample json file
+<br>
+<strong>Description: </strong> did it 
