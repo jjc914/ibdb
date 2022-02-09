@@ -3,88 +3,83 @@
 **Question Processing**
 
 ### Math
-- [ ] Sort questions Math AI HL  
-- [ ] Sort questions Math AI SL  
-- [ ] Sort questions Math AA HL  
-- [ ] Sort questions Math AA SL  
+- [ ] Sort questions Math AI HL  -@TheArctesian
+- [ ] Sort questions Math AI SL  -@TheArctesian
+- [ ] Sort questions Math AA HL  -@jjc914
+- [ ] Sort questions Math AA SL  -@jjc914
 
 ### Science 
-- [ ] Sort questions Physics HL  
-- [ ] Sort questions Physics SL  
+- [ ] Sort questions Physics HL  -@jjc914
+- [ ] Sort questions Physics SL  -@jjc914
 
-- [ ] Sort questions Bio HL 
-- [ ] Sort questions Bio SL 
+- [ ] Sort questions Bio HL -@jjc914
+- [ ] Sort questions Bio SL -@jjc914
 
-- [ ] Sort questions Chem HL 
-- [ ] Sort questions Chem SL 
+- [ ] Sort questions Chem HL -@TheArctesian
+- [ ] Sort questions Chem SL -@TheArctesian
 
-- [ ] Sort Data CS HL 
-- [ ] Sort Data CS SL 
+- [ ] Sort Data CS HL -@jjc914
+- [ ] Sort Data CS SL -@jjc914
 
-- [ ] Sort Data DT HL 
-- [ ] Sort Data DT SL 
+- [ ] Sort Data DT HL -@TheArctesian
+- [ ] Sort Data DT SL -@TheArctesian
 
-### English 
+### English -@jjc914
 
-- [ ] Paper 1 prompts Lang Lit
-- [ ] Paper 1 prompts Lit
+- [ ] Paper 1 prompts Lang Lit 
+- [ ] Paper 1 prompts Lit 
 
 ### Chinese 
 
-- [ ] Paper writing prompts B_HL
-- [ ] Paper writing prompts B_SL
+- [ ] Paper writing prompts B_HL -@TheArctesian
+- [ ] Paper writing prompts B_SL -@TheArctesian
 
-- [ ] Listening questions B_HL 
-- [ ] Listening questions B_SL 
 
-- [ ] Reading questions B_HL 
-- [ ] Reading questions B_SL 
+- [ ] Reading questions B_HL -@jjc914
+- [ ] Reading questions B_SL -@jjc914
 
-### Econ
+### Econ -@jjc914
 
-- [ ] Paper 1 prompts HL
-- [ ] Paper 1 prompts SL
+- [ ] Paper 1 prompts HL 
+- [ ] Paper 1 prompts SL 
 
-- [ ] Paper 2 questions HL
-- [ ] Paper 2 questions SL
+- [ ] Paper 2 questions HL 
+- [ ] Paper 2 questions SL 
 
-- [ ] Paper 3 questions HL
+- [ ] Paper 3 questions HL 
 
-## Geo
+## Geo -@TheArctesian
 
-- [ ] Paper 1 questions HL
-- [ ] Paper 1 questions SL
+- [ ] Paper 1 questions HL 
+- [ ] Paper 1 questions SL 
 
-- [ ] Paper 2 questions HL
-- [ ] Paper 2 questions SL
+- [ ] Paper 2 questions HL 
+- [ ] Paper 2 questions SL 
 
-- [ ] Paper 3 prompts HL
+- [ ] Paper 3 prompts HL 
 
-### History
+### History -@jjc914
 
-- [ ] Paper 1 questions HL
-- [ ] Paper 1 questions SL
+- [ ] Paper 1 questions HL 
+- [ ] Paper 1 questions SL 
 
-- [ ] Paper 2 questions HL
-- [ ] Paper 2 questions SL
+- [ ] Paper 2 questions HL 
+- [ ] Paper 2 questions SL 
 
-- [ ] Paper 3 prompts HL
+- [ ] Paper 3 prompts HL 
 
-### Psychology 
+### Psychology -@TheArctesian
 
-- [ ] SAQ HL
-- [ ] SAQ SL
+- [ ] SAQ HL 
+- [ ] SAQ SL 
 
-- [ ] ERQ HL
+- [ ] ERQ HL 
 - [ ] ERQ SL 
 
-### Music
+### Music -@jjc914
 
 - [ ] Listening 
 - [ ] Sight Reading
-
-### Processing stuff
-- [ ] fuck me this is going to be difficult
 
 ### Firestore
 - [ ] Upload sorted data to firestore 
