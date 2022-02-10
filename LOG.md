@@ -51,17 +51,6 @@ Format:
 
 <hr>
 
-<strong>Name: </strong> Arctesian
-<br>
-<strong>Time: </strong>  <em>16:30-17:10</em> 
-<br>
-<strong>Date: </strong>  <em>9.2.22</em> 
-<br>
-<strong>Goal: </strong> Update TODO roles and sample json file
-<br>
-<strong>Description: </strong> did it 
-
-<hr>
 
 <strong>Name: </strong> Arctesian
 <br>
