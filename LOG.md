@@ -47,7 +47,7 @@ Format:
 <br>
 <strong>Goal: </strong> Setup
 <br>
-<strong>Description: </strong> Research + prep: https://blog.aspose.com/2021/06/14/convert-image-to-searchable-pdf-file-with-ocr-using-cpp/
+<strong>Description: </strong> [Research + prep](https://blog.aspose.com/2021/06/14/convert-image-to-searchable-pdf-file-with-ocr-using-cpp/)
 
 <hr>
 
