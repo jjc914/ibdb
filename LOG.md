@@ -65,7 +65,7 @@ Format:
 
 <strong>Name: </strong> Arctesian
 <br>
-<strong>Time: </strong>  <em>22:13- </em> 
+<strong>Time: </strong>  <em>01:00-02:00 </em> 
 <br>
 <strong>Date: </strong>  <em>9.2.22</em> 
 <br>
