@@ -69,6 +69,7 @@ Format:
 <br>
 <strong>Date: </strong>  <em>9.2.22</em> 
 <br>
-<strong>Goal: </strong> Fix the json, Figure out techstack, Start data architecture 
-<br>
+<strong>Goal: </strong> Fix the json, Figure out techstack, start some pdf pros
+ <br>
 <strong>Description: </strong> 
+Did the json, did the teachstack and explained reasons, and started some formating of pdf files in /Server/dataPros
