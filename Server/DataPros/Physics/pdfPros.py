@@ -2,8 +2,8 @@
 from PyPDF2 import PdfFileReader, PdfFileWriter
 # will put colors in when its not 01:30 in the morning
 
-questions_path = "./PDF/PHYSICS-QS-MCQ-2016-MAY"
-answer_path = "./PDF/PHYSICS-ANS-MCQ-2016-MAY"
+questions_path = "/PDF/PHYSICS-ANS-MCQ-2016-MAY.pdf"
+answer_path = "/PDF/PHYSICS-ANS-MCQ-2016-MAY.pdf"
 # init json conf
 data = {
     "subject" : "",
@@ -43,6 +43,27 @@ def formatPath(filePath):
     print(data)
 
 
-def readFileData(filePath)
-formatPath(answer_path)
+def readFileData(filePath):
+    # Reading the file
+    file = open(answer_path, "rb")
+    pdf = PdfFileReader(file)
+    # Getting the number of pages
+    numPages = pdf.getNumPages()
+    # Getting the text from the first page
+    text = pdf.getPage(0).extractText()
+    # Getting the image from the first page
+    img = pdf.getPage(0).mediaBox
+    # Getting the text from the last page
+    text = pdf.getPage(numPages-1).extractText()
+    # Getting the image from the last page
+    img = pdf.getPage(numPages-1).mediaBox
+    # Closing the file
+    file.close()
+    # Setting the data
+    print(img)
+    print(text)
+    # data["img"] = img
+    # data["text"] = text
 
+
+readFileData(answer_path)
