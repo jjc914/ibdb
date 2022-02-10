@@ -9,8 +9,8 @@
 - [ ] Sort questions Math AA SL  -@jjc914
 
 ### Science 
-- [ ] Sort questions Physics HL  -@jjc914
-- [ ] Sort questions Physics SL  -@jjc914
+- [ ] Sort questions Physics HL  -@TheArctesian
+- [ ] Sort questions Physics SL  -@TheArctesian
 
 - [ ] Sort questions Bio HL -@jjc914
 - [ ] Sort questions Bio SL -@jjc914

@@ -1,3 +1,4 @@
+{   "Tetsis" : [
 {
     "physicsHL" : [
         {
@@ -17,14 +18,25 @@
                     ]
                 }
             ],
-            "paper2"
-        } 
+            "paper1" : [
+                {
+                    "mechanics" : [
+                        {
+                            "id" : "id",
+                            "photoUrl" : "http://",
+                            "answer" : "http://"
+                        },
+                        {
+                            "id" : "id",
+                            "photoUrl" : "http://",
+                            "answer" : "http://"
+                        }
+                    ]
+                }
+            ]
+        }
     ]
-}
-
-
-// or could
-
+},
 {
     "physicsHL" : [
         {
@@ -34,7 +46,7 @@
                     "topic" : "topic",
                     "photoUrl" : "http://",
                     "answer" : "http://"
-                }    
+                },   
                 {
                     "id" : "id",
                     "topic" : "topic",
@@ -48,7 +60,7 @@
                     "topic" : "topic",
                     "photoUrl" : "http://",
                     "answer" : "http://"
-                }        
+                },       
                 {
                     "id" : "id",
                     "topic" : "topic",
@@ -58,4 +70,6 @@
             ]
         } 
     ]
+}
+]
 }
