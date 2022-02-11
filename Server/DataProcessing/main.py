@@ -2,19 +2,22 @@
 import os;
 import sys;
 import re;
+import io;
 from PyPDF2 import PdfFileReader, PdfFileWriter
 # will put colors in when its not 01:30 in the morning
 
 def readFile(path):
     file = open(path, 'rb')
-    pdf = PdfFileReader(file, strict=False)
-    numPages = pdf.getNumPages()
-    text = ''
-    for page in range(numPages):
-        text += pdf.getPage(page).extractText() + '\n'
-    file.close()
-    # https://regexr.com/6f76h
-    getQuestionsFromDocument(text)
+    buffer = io.BufferedReader(file)
+    print(buffer.read().decode('unicode_escape'))
+    # pdf = PdfFileReader(file, strict=False)
+    # numPages = pdf.getNumPages()
+    # text = ''
+    # for page in range(numPages):
+    #     text += pdf.getPage(page).extractText() + '\n'
+    # file.close()
+    # # https://regexr.com/6f76h
+    # getQuestionsFromDocument(text)
 
 
 def getQuestionsFromDocument(text):
@@ -26,10 +29,11 @@ def getFileExtension(fileName):
 
 if __name__ == '__main__':
     rootDataPath = ""
-    if sys.argv[1] == '-d':
-        rootDataPath = sys.argv[2]
-        if rootDataPath[len(rootDataPath) - 1] != '/':
-            rootDataPath += '/'
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '-d':
+            rootDataPath = sys.argv[2]
+            if rootDataPath[len(rootDataPath) - 1] != '/':
+                rootDataPath += '/'
     # for file in os.listdir(rootDataPath):
     #     if getFileExtension(file) == 'pdf':
     #         readFile(rootDataPath + file)
