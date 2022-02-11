@@ -2,6 +2,7 @@ import os;
 import sys;
 import re;
 import io;
+import time;
 
 import argparse
 
@@ -24,7 +25,7 @@ def readDocument(path):
     interpreter = PDFPageInterpreter(rsrcmgr, device)
     pages = PDFPage.get_pages(file)
     for i, page in enumerate(pages):
-        Logger.log(0, )
+        Logger.log(2, 'Parsing page {}...'.format(i + 1))
         interpreter.process_page(page)
         layout = device.get_result()
         for obj in layout:
@@ -39,7 +40,7 @@ def getFileExtension(fileName):
 
 def checkArgLogValue(value):
     if value in ['0', '1', '2']:
-        return value
+        return int(value)
     else:
         raise Exception('[Err] Expected integer value between 0 and 3')
 
@@ -50,12 +51,14 @@ def checkArgPathValue(path):
         raise NotADirectoryError('[Errno 2] No such directory: \'%s\'' % path)
 
 if __name__ == '__main__':
+    startTime = round(time.time() * 1000)
+
     parser = argparse.ArgumentParser(description='Parse IBDP past papers for individual questions and question tags.')
     parser.add_argument('-d', dest='dir', type=checkArgPathValue, help='the directory that contains the pdf files to search (automatically the working directory)')
-    parser.add_argument('-log', dest='log', type=checkArgLogValue, help='sets progress logging detail (highest 0-1-2 lowest)')
+    parser.add_argument('-log', dest='log', type=checkArgLogValue, help='sets progress logging detail (only important 0-1-2 everything)')
     args = parser.parse_args()
 
-    Logger.setPriority(3)
+    Logger.setPriority(args.log)
 
     directory = ''
     if args.dir:
@@ -64,7 +67,13 @@ if __name__ == '__main__':
         directory = args.dir
     for file in os.listdir(args.dir):
         if getFileExtension(file) == 'pdf':
+            Logger.log(1, '')
+            Logger.log(1, '-' * len(file))
+            Logger.log(1, 'Reading {}...'.format(file))
             document = readDocument(directory + file)
+
+    Logger.log(0, '')
+    Logger.log(0, 'Process finished in {}ms'.format(round(time.time() * 1000) - startTime))
 
 # init json conf
 # data = {
