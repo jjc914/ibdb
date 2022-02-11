@@ -37,7 +37,7 @@ if __name__ == '__main__':
     # for file in os.listdir(rootDataPath):
     #     if getFileExtension(file) == 'pdf':
     #         readFile(rootDataPath + file)
-    readFile('Data/Mathematics_paper_1__TZ1_HL.pdf')
+    # readFile('Data/Mathematics_paper_1__TZ1_HL.pdf')
 
 # init json conf
 # data = {
