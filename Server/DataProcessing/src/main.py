@@ -13,6 +13,12 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.converter import PDFPageAggregator
 
 from logger import Logger
+from logger import Color
+
+class ArgNotADirectoryError(Exception):
+    pass
+class ArgNotLogValueError(Exception):
+    pass
 
 # this was such a pain to finally figure out, i recommend never touching the structure of PDF files with a 10 foot pole
 def readDocument(path):
@@ -38,42 +44,51 @@ def readDocument(path):
 def getFileExtension(fileName):
     return file.split('.')[len(file.split('.')) - 1]
 
-def checkArgLogValue(value):
-    if value in ['0', '1', '2']:
-        return int(value)
-    else:
-        raise Exception('[Err] Expected integer value between 0 and 3')
-
 def checkArgPathValue(path):
     if os.path.isdir(path):
         return path
     else:
-        raise NotADirectoryError('[Errno 2] No such directory: \'%s\'' % path)
+        raise ArgNotADirectoryError('[Errno 2] No such directory: \'{}\''.format(path))
+
+def checkArgLogValue(value):
+    if value in ['0', '1', '2']:
+        return int(value)
+    else:
+        raise ArgNotLogValueError('[Err] Expected integer value between 0 and 3')
 
 if __name__ == '__main__':
     startTime = round(time.time() * 1000)
+    try:
+        parser = argparse.ArgumentParser(description='Parse IBDP past papers for individual questions and question tags.')
+        parser.add_argument('-d', dest='dir', type=checkArgPathValue, help='the directory that contains the pdf files to search (automatically the working directory)')
+        parser.add_argument('-log', dest='log', type=checkArgLogValue, help='sets progress logging detail (only important 0-1-2 everything)')
+        args = parser.parse_args()
 
-    parser = argparse.ArgumentParser(description='Parse IBDP past papers for individual questions and question tags.')
-    parser.add_argument('-d', dest='dir', type=checkArgPathValue, help='the directory that contains the pdf files to search (automatically the working directory)')
-    parser.add_argument('-log', dest='log', type=checkArgLogValue, help='sets progress logging detail (only important 0-1-2 everything)')
-    args = parser.parse_args()
+        if args.log:
+            Logger.setPriority(args.log)
+        else:
+            Logger.setPriority(0)
 
-    Logger.setPriority(args.log)
+        Logger.log(0, 'Starting...', Color.OKGREEN)
 
-    directory = ''
-    if args.dir:
-        if args.dir[len(args.dir) - 1] != '/':
-            args.dir += '/'
-        directory = args.dir
-    for file in os.listdir(args.dir):
-        if getFileExtension(file) == 'pdf':
-            Logger.log(1, '')
-            Logger.log(1, '-' * len(file))
-            Logger.log(1, 'Reading {}...'.format(file))
-            document = readDocument(directory + file)
+        directory = ''
+        if args.dir:
+            if args.dir[len(args.dir) - 1] != '/':
+                args.dir += '/'
+            directory = args.dir
+        for file in os.listdir(args.dir):
+            if getFileExtension(file) == 'pdf':
+                Logger.log(2, '')
+                Logger.log(2, '-' * len(file))
+                Logger.log(1, 'Reading {}...'.format(file), color=Color.BOLD)
+                document = readDocument(directory + file)
+    except ArgNotADirectoryError:
+        Logger.log(0, '[ERROR] No such directory: enter a valid directory to scan', Color.FAIL)
+    except ArgNotLogValueError:
+        Logger.log(0, '[ERROR] Expected integer value between 0 and 2', Color.FAIL)
 
     Logger.log(0, '')
-    Logger.log(0, 'Process finished in {}ms'.format(round(time.time() * 1000) - startTime))
+    Logger.log(0, 'Process finished in {}ms'.format(round(time.time() * 1000) - startTime), Color.OKGREEN)
 
 # init json conf
 # data = {
