@@ -1,43 +1,70 @@
-# pip install PyPDF2
 import os;
 import sys;
 import re;
 import io;
-from PyPDF2 import PdfFileReader, PdfFileWriter
-# will put colors in when its not 01:30 in the morning
 
-def readFile(path):
+import argparse
+
+from pdfminer.layout import LAParams, LTTextBox
+from pdfminer.pdfpage import PDFPage
+from pdfminer.pdfinterp import PDFResourceManager
+from pdfminer.pdfinterp import PDFPageInterpreter
+from pdfminer.converter import PDFPageAggregator
+
+from logger import Logger
+
+# this was such a pain to finally figure out, i recommend never touching the structure of PDF files with a 10 foot pole
+def readDocument(path):
     file = open(path, 'rb')
-    buffer = io.BufferedReader(file)
-    print(buffer.read().decode('unicode_escape'))
-    # pdf = PdfFileReader(file, strict=False)
-    # numPages = pdf.getNumPages()
-    # text = ''
-    # for page in range(numPages):
-    #     text += pdf.getPage(page).extractText() + '\n'
-    # file.close()
-    # # https://regexr.com/6f76h
-    # getQuestionsFromDocument(text)
 
-
-def getQuestionsFromDocument(text):
-    potentialMatches = re.findall('\d+(?=\.\s)', text)
-    print(potentialMatches)
+    objs = []
+    rsrcmgr = PDFResourceManager()
+    laparams = LAParams()
+    device = PDFPageAggregator(rsrcmgr, laparams=laparams)
+    interpreter = PDFPageInterpreter(rsrcmgr, device)
+    pages = PDFPage.get_pages(file)
+    for i, page in enumerate(pages):
+        Logger.log(0, )
+        interpreter.process_page(page)
+        layout = device.get_result()
+        for obj in layout:
+            if isinstance(obj, LTTextBox):
+                x, y, text = obj.bbox[0], obj.bbox[3], obj.get_text()
+                objs.append((i, (x, y), text))
+    file.close()
+    return sorted(objs, key=lambda e: (e[0], -e[1][1]))
 
 def getFileExtension(fileName):
     return file.split('.')[len(file.split('.')) - 1]
 
+def checkArgLogValue(value):
+    if value in ['0', '1', '2']:
+        return value
+    else:
+        raise Exception('[Err] Expected integer value between 0 and 3')
+
+def checkArgPathValue(path):
+    if os.path.isdir(path):
+        return path
+    else:
+        raise NotADirectoryError('[Errno 2] No such directory: \'%s\'' % path)
+
 if __name__ == '__main__':
-    rootDataPath = ""
-    if len(sys.argv) > 1:
-        if sys.argv[1] == '-d':
-            rootDataPath = sys.argv[2]
-            if rootDataPath[len(rootDataPath) - 1] != '/':
-                rootDataPath += '/'
-    # for file in os.listdir(rootDataPath):
-    #     if getFileExtension(file) == 'pdf':
-    #         readFile(rootDataPath + file)
-    # readFile('Data/Mathematics_paper_1__TZ1_HL.pdf')
+    parser = argparse.ArgumentParser(description='Parse IBDP past papers for individual questions and question tags.')
+    parser.add_argument('-d', dest='dir', type=checkArgPathValue, help='the directory that contains the pdf files to search (automatically the working directory)')
+    parser.add_argument('-log', dest='log', type=checkArgLogValue, help='sets progress logging detail (highest 0-1-2 lowest)')
+    args = parser.parse_args()
+
+    Logger.setPriority(3)
+
+    directory = ''
+    if args.dir:
+        if args.dir[len(args.dir) - 1] != '/':
+            args.dir += '/'
+        directory = args.dir
+    for file in os.listdir(args.dir):
+        if getFileExtension(file) == 'pdf':
+            document = readDocument(directory + file)
 
 # init json conf
 # data = {
