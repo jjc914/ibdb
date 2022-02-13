@@ -19,4 +19,4 @@ class Logger():
     @staticmethod
     def log(prio, text, color=Color.ENDC):
         if prio <= Logger._priority:
-            print("{}{}{}".format(color, text, Color.ENDC))
+            print(f'{color}{text}{Color.ENDC}')
