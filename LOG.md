@@ -62,3 +62,16 @@ Format:
  <br>
 <strong>Description: </strong> 
 Did the json, did the teachstack and explained reasons, and started some formating of pdf files in /Server/dataPros
+
+<hr>
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>11:00-12:40 </em> 
+<br>
+<strong>Date: </strong>  <em>13.2.22</em> 
+<br>
+<strong>Goal: </strong> Fix the json, Figure out techstack, start some pdf pros
+ <br>
+<strong>Description: </strong> 
+Actually made the backend arch and mapped out all of physics

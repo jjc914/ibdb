@@ -1,0 +1,231 @@
+{
+  "physics" : {
+    "atomicPhysics" : {
+      "discreteEnergy&Radioactivity" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "nuclearReactions" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x"
+      },
+      "structureOfMatter" : {
+        "quesMCQ" : "x"
+      }
+    },
+    "circularMotion" : {
+      "circularMotion" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x"
+      },
+      "gravitation" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x"
+      }
+    },
+    "electricity&magnetism" : {
+      "cells" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "currents" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "electricFields" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "magnetismOfCurrents" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "electromagneticInduction" : {
+      "capacitance" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "electromagneticInduction" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "powerGeneration&transmission" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "energyProduction" : {
+      "energySources" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "thermalEnergyTransfer" : {
+        "quesMCQ" : "x"
+      }
+    },
+    "fields" : {
+      "describingFields" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "fieldsAtWork" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "measr&uncr" : {
+      "measurements" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x"
+      },
+      "uncr&errors" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x"
+      },
+      "vectors&scalars" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x"
+      }
+    },
+    "mechanics" : {
+      "forces" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "momentum&impulse" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "motion" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "workEnergyPower" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "quantum&nuclearPhysics" : {
+      "matter&radiation" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "nuclearPhysics" : {
+        "ansMCQ" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "thermal" : {
+      "concepts" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "modellingGas" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "wavePhenomena" : {
+      "dopplerEffect" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "harmonicMotion" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "interference" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "resolution" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "single-slitDiffraction" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    },
+    "waves" : {
+      "oscillations" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "standingWaves" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "travellingWaves" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "waveBehaviour" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      },
+      "waveChar" : {
+        "ansMCQ" : "x",
+        "ansP2" : "x",
+        "quesMCQ" : "x",
+        "quesP2" : "x"
+      }
+    }
+  }
+}
