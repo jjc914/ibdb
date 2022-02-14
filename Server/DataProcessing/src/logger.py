@@ -1,3 +1,5 @@
+import platform
+
 class Color():
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -19,4 +21,9 @@ class Logger():
     @staticmethod
     def log(prio, text, color=Color.ENDC):
         if prio <= Logger._priority:
-            print(f'{color}{text}{Color.ENDC}')
+            if platform.system() == 'Darwin':
+                print(f'{color}{text}{Color.ENDC}')
+            elif platform.system() == 'Linux':
+                print(f'{color}{text}{Color.ENDC}')
+            elif platform.system() == 'Windows':
+                print(text)
