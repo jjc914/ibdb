@@ -89,6 +89,7 @@ def extractQuestions(inPath, outPath, document):
             if not (questionNumber == previousNumber + 1): continue
             # this is only ran if it is an increased digit
             if previousRect:
+                # TODO: better detection for end-of-question
                 if i == previousPageNumber:
                     # case 1: both on the same page
                     # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, textRect.top_right))
@@ -112,9 +113,6 @@ def extractQuestions(inPath, outPath, document):
             previousRect = textRect
             previousPageNumber = i
             previousPage = page
-            # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3]))
-            # img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-            # img.save(outPath + f'page{i}object{k}.png')
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]
