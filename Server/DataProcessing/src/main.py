@@ -86,9 +86,11 @@ def extractQuestions(inPath, outPath, document):
     magnify = fitz.Matrix(zoom, zoom)
     doc = fitz.open(inPath)
     for i, page in enumerate(doc):
-        pix = page.get_pixmap(matrix=magnify)
-        img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-        img.save(outPath + f'page{i}.png')
+        pageData = document[i]['pageData']
+        for k, dataBox in enumerate(pageData):
+            pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3]))
+            img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+            img.save(outPath + f'page{i}object{k}.png')
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]
