@@ -36,14 +36,14 @@ def main():
                 args.dir += '/'
             directory = args.dir
         for fileName in os.listdir(args.dir):
-            if fileName == 'Physics_paper_1__TZ1_HL.pdf':
-                if getFileExtension(fileName) == 'pdf':
-                    Logger.log(2, '')
-                    Logger.log(2, '-' * len(fileName))
-                    Logger.log(1, f'Reading {fileName}...', color=Color.BOLD)
-                    document = readDocument(directory + fileName)
-                    print(document)
-                    extractQuestions(directory + fileName, f'{directory}out/', document)
+            if getFileExtension(fileName) == 'pdf':
+                Logger.log(2, '')
+                Logger.log(2, '-' * len(fileName))
+                Logger.log(1, f'Reading {fileName}...', color=Color.BOLD)
+                document = readDocument(directory + fileName)
+                if not os.path.isdir(f'{directory}out/{fileName[:len(fileName) - 4]}/'):
+                    os.mkdir(f'{directory}out/{fileName[:len(fileName) - 4]}/')
+                extractQuestions(directory + fileName, f'{directory}out/{fileName[:len(fileName) - 4]}/', document)
     except ArgNotADirectoryError:
         Logger.log(0, '[ERROR] No such directory: enter a valid directory to scan', Color.FAIL)
     except ArgNotLogValueError:
@@ -72,26 +72,46 @@ def extractQuestions(inPath, outPath, document):
     magnify = fitz.Matrix(zoom, zoom)
     doc = fitz.open(inPath)
     previousNumber = 0
-    topLeft = None
-    bottomRight = None
+    previousRect = None
+    previousPageNumber = 0
+    previousPage = None
     for i, page in enumerate(doc):
         pageData = document[i]['pageData']
         for k, dataBox in enumerate(pageData):
             text = dataBox[4]
             textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
-            if not topLeft:
-                # https://regexr.com/6febi
-                match = re.search('(\d+)\.\s*\\n', text)
-                if not match: continue
-                questionNumber = match.group(1)
-                if not questionNumber.strip().isdigit(): continue
-                questionNumber = int(questionNumber)
-                if not (questionNumber == previousNumber + 1): continue
-                print(questionNumber)
-                topLeft = textRect
-                previousNumber = questionNumber
-            elif not bottomRight:
-                pass
+            # https://regexr.com/6febi
+            match = re.search('(\d+)\.\s*\\n', text)
+            if not match: continue
+            questionNumber = match.group(1)
+            if not questionNumber.strip().isdigit(): continue
+            questionNumber = int(questionNumber)
+            if not (questionNumber == previousNumber + 1): continue
+            # this is only ran if it is an increased digit
+            if previousRect:
+                if i == previousPageNumber:
+                    # case 1: both on the same page
+                    # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, textRect.top_right))
+                    pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(0, previousRect.y0), fitz.Point(page.rect.width, textRect.y0)))
+                    img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+                    img.save(outPath + f'page{i}object{k}.png')
+                else:
+                    # case 2: different pages
+                    # pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, fitz.Point(textRect.x1, page.rect.y1)))
+                    pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(0, previousRect.y0), fitz.Point(page.rect.width, page.rect.y1)))
+                    # pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(previousRect.x0, page.rect.y0), textRect.top_right))
+                    pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(0, page.rect.y0), fitz.Point(page.rect.width, textRect.y0)))
+                    img1 = Image.frombytes('RGB', [pix1.width, pix1.height], pix1.samples)
+                    img2 = Image.frombytes('RGB', [pix2.width, pix2.height], pix2.samples)
+                    img = Image.new('RGB', (max(img1.width, img2.width), img1.height + img2.height), (255, 255, 255))
+                    img.paste(img1, (0, 0))
+                    img.paste(img2, (0, img1.height))
+                    img.save(outPath + f'page{i}object{k}.png')
+
+            previousNumber = questionNumber
+            previousRect = textRect
+            previousPageNumber = i
+            previousPage = page
             # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3]))
             # img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
             # img.save(outPath + f'page{i}object{k}.png')
