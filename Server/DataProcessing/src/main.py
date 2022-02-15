@@ -36,12 +36,14 @@ def main():
                 args.dir += '/'
             directory = args.dir
         for fileName in os.listdir(args.dir):
-            if getFileExtension(fileName) == 'pdf':
-                Logger.log(2, '')
-                Logger.log(2, '-' * len(fileName))
-                Logger.log(1, f'Reading {fileName}...', color=Color.BOLD)
-                document = readDocument(directory + fileName)
-                extractQuestions(directory + fileName, f'{directory}out/', document)
+            if fileName == 'Physics_paper_1__TZ1_HL.pdf':
+                if getFileExtension(fileName) == 'pdf':
+                    Logger.log(2, '')
+                    Logger.log(2, '-' * len(fileName))
+                    Logger.log(1, f'Reading {fileName}...', color=Color.BOLD)
+                    document = readDocument(directory + fileName)
+                    print(document)
+                    extractQuestions(directory + fileName, f'{directory}out/', document)
     except ArgNotADirectoryError:
         Logger.log(0, '[ERROR] No such directory: enter a valid directory to scan', Color.FAIL)
     except ArgNotLogValueError:
@@ -63,34 +65,36 @@ def readDocument(path):
         docData.append(pageData)
     return docData
 
-    #     objs = []
-    #     rsrcmgr = PDFResourceManager()
-    #     laparams = LAParams()
-    #     device = PDFPageAggregator(rsrcmgr, laparams=laparams)
-    #     interpreter = PDFPageInterpreter(rsrcmgr, device)
-    #     pages = PDFPage.get_pages(file)
-    #     for i, page in enumerate(pages):
-    #         Logger.log(2, f'Parsing page {i + 1}...')
-    #         interpreter.process_page(page)
-    #         layout = device.get_result()
-    #         for obj in layout:
-    #             if isinstance(obj, LTTextBox):
-    #                 x, y, text = obj.bbox[0], obj.bbox[3], obj.get_text()
-    #                 objs.append((i, (x, y), text))
-    # return sorted(objs, key=lambda e: (e[0], -e[1][1]))
-
 def extractQuestions(inPath, outPath, document):
     dpi = 300
 
     zoom = dpi / 72
     magnify = fitz.Matrix(zoom, zoom)
     doc = fitz.open(inPath)
+    previousNumber = 0
+    topLeft = None
+    bottomRight = None
     for i, page in enumerate(doc):
         pageData = document[i]['pageData']
         for k, dataBox in enumerate(pageData):
-            pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3]))
-            img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-            img.save(outPath + f'page{i}object{k}.png')
+            text = dataBox[4]
+            textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
+            if not topLeft:
+                # https://regexr.com/6febi
+                match = re.search('(\d+)\.\s*\\n', text)
+                if not match: continue
+                questionNumber = match.group(1)
+                if not questionNumber.strip().isdigit(): continue
+                questionNumber = int(questionNumber)
+                if not (questionNumber == previousNumber + 1): continue
+                print(questionNumber)
+                topLeft = textRect
+                previousNumber = questionNumber
+            elif not bottomRight:
+                pass
+            # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3]))
+            # img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+            # img.save(outPath + f'page{i}object{k}.png')
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]
