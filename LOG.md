@@ -56,7 +56,7 @@ Format:
 <br>
 <strong>Time: </strong>  <em>01:00-02:00 </em> 
 <br>
-<strong>Date: </strong>  <em>9.2.22</em> 
+<strong>Date: </strong>  <em>10.2.22</em> 
 <br>
 <strong>Goal: </strong> Fix the json, Figure out techstack, start some pdf pros
  <br>
