@@ -124,3 +124,17 @@ Actually made the backend arch and mapped out all of physics
 <br>
 <strong>Description: </strong>
 init the front end 
+
+
+<hr>
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>11:30 - 00:45</em> 
+<br>
+<strong>Date: </strong>  <em>17.2.22</em> 
+<br>
+<strong>Goal: </strong> finish the rest of the arc 
+<br>
+<strong>Description: </strong>
+finished the rest of the proj arc as well as init hooks
