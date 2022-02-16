@@ -65,6 +65,18 @@ Did the json, did the teachstack and explained reasons, and started some formati
 
 <hr>
 
+<strong>Name: </strong>Josh
+<br>
+<strong>Time: </strong>  <em>13:45-16:00</em> 
+<br>
+<strong>Date: </strong>  <em>11.2.22</em> 
+<br>
+<strong>Goal: </strong> Data processing
+<br>
+<strong>Description: </strong> Learning about PDF internal structure.
+
+<hr>
+
 <strong>Name: </strong> Arctesian
 <br>
 <strong>Time: </strong>  <em>11:00-12:40 </em> 
@@ -75,18 +87,6 @@ Did the json, did the teachstack and explained reasons, and started some formati
  <br>
 <strong>Description: </strong> 
 Actually made the backend arch and mapped out all of physics
-
-<hr>
-
-<strong>Name: </strong>Josh
-<br>
-<strong>Time: </strong>  <em>13:45-16:00</em> 
-<br>
-<strong>Date: </strong>  <em>11.2.22</em> 
-<br>
-<strong>Goal: </strong> Data processing
-<br>
-<strong>Description: </strong> Learning about PDF internal structure.
 
 <hr>
 
