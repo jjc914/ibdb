@@ -75,3 +75,16 @@ Did the json, did the teachstack and explained reasons, and started some formati
  <br>
 <strong>Description: </strong> 
 Actually made the backend arch and mapped out all of physics
+
+<hr>
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>16:00 - 15:40</em> 
+<br>
+<strong>Date: </strong>  <em>16.2.22</em> 
+<br>
+<strong>Goal: </strong> init frontend
+<br>
+<strong>Description: </strong>
+init the front end 
