@@ -27,7 +27,6 @@
     margin-top: 1rem;
   }
   .link {
-    position: absolute;
     bottom: 0;
     height: 100%;
     align-items: center;
@@ -43,7 +42,7 @@
 </style>
 
 <slot />
-<!-- <li class:active={$page.url.pathname === '/'}>
+ <li class:active={$page.url.pathname === '/'}>
   <a class="link" sveltekit:prefetch href="/">index</a>
 </li>
 <li class:active={$page.url.pathname === '/Sorry'}>
@@ -54,7 +53,7 @@
 </li>
 <li class:active={$page.url.pathname === '/home'}>
   <a class="link" sveltekit:prefetch href="/home">home</a>
-</li> -->
+</li>
 <div class:active={$page.url.pathname === '/home'}>
   <a class="link" sveltekit:prefetch href="/home">
     <img src={logo} class="logo" alt="logo" />

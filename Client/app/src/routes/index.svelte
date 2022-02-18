@@ -11,7 +11,7 @@
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <div class="flex backpeepee p-3 rounded-3xl drop-shadow-2xl">
+  <div class="flex backpeepee p-3 rounded-3xl shadow-lg border-green-500 border-0 hover:border-4 shadow-lg duration-500 ease-in-out transition hover:scale-105 drop-shadow-2xl">
     <img
       src="https://img.icons8.com/fluency-systems-filled/96/000000/google-logo.png" />
     <a class="link" sveltekit:prefetch href="/login">
