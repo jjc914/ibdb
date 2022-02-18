@@ -1,3 +1,10 @@
+<script lang="ts">
+  import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+  const provider = new GoogleAuthProvider();
+
+const auth = getAuth();
+
+</script>
 <style>
   .back {
     background-color: #272727;

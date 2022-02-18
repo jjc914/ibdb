@@ -14,10 +14,10 @@
   <title>Login</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <div class="flex w-1/2 backpeepee p-6 rounded-3xl ">
-    <div class="w-full m-auto">
-      <h1 class="bg-white text-xl text-white py-2 px-4 rounded back2">
-        Email Us
+  <div class="flex w-1/4 backpeepee p-6 rounded-3xl ">
+    <div class="w-3/4 m-auto">
+      <h1 class="bg-white text-xl text-center text-white py-2 px-4 rounded back2">
+        Set your infromation
       </h1>
       <br />
       <img
@@ -36,26 +36,25 @@
             text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="username"
             type="text"
-            placeholder="theArctesian" />
+            placeholder="yourSexyNickname" />
         </div>
         <div class="mb-6">
           <label
             class="block text-gray-700 text-sm font-bold mb-2"
-            for="password">
+            type="text">
 		  Bio
           </label>
           <input
-            class="shadow appearance-none border border-red-500 rounded w-full
+            class="shadow appearance-none rounded w-full
             py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none
             focus:shadow-outline"
-	    type="message">
-          <p class="text-red-500 text-xs italic">Please choose a password.</p>
+	    type="text">
         </div>
         <div class="flex items-center justify-between">
           <button
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4
             rounded focus:outline-none focus:shadow-outline"
-            type="button">
+            type='submit'>
             Sign In
           </button>
         </div>

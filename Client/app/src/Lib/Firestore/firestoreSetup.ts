@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore';
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -10,6 +11,7 @@ import { getFirestore } from 'firebase/firestore';
 const firebaseConfig = {
   apiKey: "AIzaSyCtQPlkMztE_pOqou84GAjzmgedgGbdZ5A",
   authDomain: "ibdb-6c905.firebaseapp.com",
+  databaseURL: "https://ibdb-6c905-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "ibdb-6c905",
   storageBucket: "ibdb-6c905.appspot.com",
   messagingSenderId: "301932410966",
@@ -19,5 +21,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
-export const db = getFirestore(app)
+export const fsdb= getFirestore(app)
+export const rtdb = getDatabase(app);

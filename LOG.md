@@ -138,3 +138,17 @@ init the front end
 <br>
 <strong>Description: </strong>
 finished the rest of the proj arc as well as init hooks
+
+
+<hr>
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>22:00 - 23:25</em> 
+<br>
+<strong>Date: </strong>  <em>18.2.22</em> 
+<br>
+<strong>Goal: </strong> start to set up the firebase stuff 
+<br>
+<strong>Description: </strong>
+um kinda set up stuff, I can read from db still working on auth, this is probs the most messy proj structure I have ever done but I don't care just need to build it out 
