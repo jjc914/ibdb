@@ -166,3 +166,16 @@ um kinda set up stuff, I can read from db still working on auth, this is probs t
 <br>
 <strong>Description: </strong>
 fuck me that was way to much json parsing but db is pretty well formated and ready for josh to put shit in I will update the firestore.py file next so it is easier for my fav cuddle bear <3 
+
+<hr>
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>13:00 - 13:45</em> 
+<br>
+<strong>Date: </strong>  <em>19.2.22</em> 
+<br>
+<strong>Goal: </strong> Add Refs to firestore.py 
+<br>
+<strong>Description: </strong>
+I don't even know if this will be useful but there you go josh I am leaving the data parsing to you know 
