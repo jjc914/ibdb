@@ -1,231 +1,1490 @@
 {
-  "physics" : {
-    "atomicPhysics" : {
-      "discreteEnergy&Radioactivity" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
+  "subjects" : {
+    "mathAA" : {
+      "numbers&Algebra" : {
+
+        "sequences&Series" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "exponents&Logs" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "binomialTheorem" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "countingPrinciples": {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "complexNumbers" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "proofs" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "systemsOfEquations" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       },
-      "nuclearReactions" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x"
+      "functions" : {
+
+        "propertiesOfFunctions" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "quadratics" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "rationalFunctions" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "exponent-LogFunctions" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "transformations" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "polynomials" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "modulus&Inequalities" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       },
-      "structureOfMatter" : {
-        "quesMCQ" : "x"
+
+      "geometry&Trigonometry" : {
+        "geometry&Shapes" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "trigonometricFunctions" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "vectors" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+      "statistics&Probability" : {
+        "statistics" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "bivariateStatistics" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "probability" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "distributions" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+      
+      "calculus" : {
+        "differentialCalculus" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "integralCalculus" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "kinematics" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "differentialEquations" : {
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "maclaurinSeries" :{
+          "p1" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p2" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "p3" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       }
     },
-    "circularMotion" : {
+    "physics" : {
+
+      "atomicPhysics" : {
+
+        "discreteEnergy&Radioactivity" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "nuclearReactions" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "structureOfMatter" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
       "circularMotion" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x"
+
+        "circularMotion" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "gravitation" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       },
-      "gravitation" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x"
-      }
-    },
-    "electricity&magnetism" : {
-      "cells" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
+      "electricity&magnetism" : {
+
+        "cells" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "currents" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "electricFields" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "magnetismOfCurrents" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       },
-      "currents" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "electricFields" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "magnetismOfCurrents" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    },
-    "electromagneticInduction" : {
-      "capacitance" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
+
       "electromagneticInduction" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
+
+        "powerGeneration&transmission" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       },
-      "powerGeneration&transmission" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
+      "energyProduction" : {
+        "energySources" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "thermalEnergyTransfer" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "fields" : {
+
+        "describingFields" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "fieldsAtWork" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "measurements&uncertainty" : {
+
+        "measurements" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "uncertainty&errors" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "vectors&scalars" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "mechanics" : {
+
+        "forces" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "momentum&impulse" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "motion" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "workEnergyPower" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "quantum&nuclearPhysics" : {
+        "matter&radiation" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "nuclearPhysics" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "thermal" : {
+        "concepts" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "modellingGas" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "wavePhenomena" : {
+        "dopplerEffect" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "harmonicMotion" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "interference" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "resolution" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "single-slitDiffraction" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
+      },
+
+      "waves" : {
+        "oscillations" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "standingWaves" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "travellingWaves" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "waveBehavior" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        },
+        "waveCharacteristics" : {
+          "MCQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          },
+          "LAQ" : {
+            "q1" : {
+              "difficulty" : "0",
+              "rightAns" : "0",
+              "wrongAns" : "0",
+              "question" : "",
+              "answer" : ""
+            }
+          }
+        }
       }
-    },
-    "energyProduction" : {
-      "energySources" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "thermalEnergyTransfer" : {
-        "quesMCQ" : "x"
-      }
-    },
-    "fields" : {
-      "describingFields" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "fieldsAtWork" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    },
-    "measr&uncr" : {
-      "measurements" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x"
-      },
-      "uncr&errors" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x"
-      },
-      "vectors&scalars" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x"
-      }
-    },
-    "mechanics" : {
-      "forces" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "momentum&impulse" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "motion" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "workEnergyPower" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    },
-    "quantum&nuclearPhysics" : {
-      "matter&radiation" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "nuclearPhysics" : {
-        "ansMCQ" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    },
-    "thermal" : {
-      "concepts" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "modellingGas" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    },
-    "wavePhenomena" : {
-      "dopplerEffect" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "harmonicMotion" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "interference" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "resolution" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "single-slitDiffraction" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    },
-    "waves" : {
-      "oscillations" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "standingWaves" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "travellingWaves" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "waveBehaviour" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      },
-      "waveChar" : {
-        "ansMCQ" : "x",
-        "ansP2" : "x",
-        "quesMCQ" : "x",
-        "quesP2" : "x"
-      }
-    }
   }
+},
+  "users" : "x"
 }

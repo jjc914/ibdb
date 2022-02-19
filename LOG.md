@@ -148,7 +148,21 @@ finished the rest of the proj arc as well as init hooks
 <br>
 <strong>Date: </strong>  <em>18.2.22</em> 
 <br>
-<strong>Goal: </strong> start to set up the firebase stuff 
+<strong>Goal: </strong> start to set up the firebase stuff in client 
 <br>
 <strong>Description: </strong>
 um kinda set up stuff, I can read from db still working on auth, this is probs the most messy proj structure I have ever done but I don't care just need to build it out 
+
+
+<hr>
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong>  <em>10:30 - 12:30</em> 
+<br>
+<strong>Date: </strong>  <em>19.2.22</em> 
+<br>
+<strong>Goal: </strong> Reformat db 
+<br>
+<strong>Description: </strong>
+fuck me that was way to much json parsing but db is pretty well formated and ready for josh to put shit in I will update the firestore.py file next so it is easier for my fav cuddle bear <3 
