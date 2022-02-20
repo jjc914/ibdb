@@ -21,7 +21,7 @@ physicsRef = subjectRef.child('physics')
 
 # Atomic Physics
 atomicPhysicsRef = physicsRef.child('atomicPhysics')
-discreteEnergy&RadioactivityRef = atomicPhysicsRef.child('discreteEnergy&Radioactivity')
+discreteEnergyandRadioactivityRef = atomicPhysicsRef.child('discreteEnergyandRadioactivity')
 nuclearReactionsRef = atomicPhysicsRef.child('nuclearReactions')
 structureOfMatterRef = atomicPhysicsRef.child('structureOfMatter')
 
@@ -30,16 +30,16 @@ circularMotionRef = physicsRef.child('circularMotion')
 circularMotionChildRef = circularMotionRef.child('circularMotion')
 gravitationRef = circularMotionRef.child('gravitation')
 
-# Electricity & Magnetism
-electricity&magnetism = physicsRef.child('electricity&magnetism')
-cellsRef = electricity&magnetism.child('cells')
-currentsRef = electricity&magnetism.child('currents')
-electricFieldsRef = electricity&magnetism.child('electricFields')
-magnetismOfCurrentsRef = electricity&magnetism.child('magnetismOfCurrents')
+# Electricity and Magnetism
+electricityandmagnetism = physicsRef.child('electricityandmagnetism')
+cellsRef = electricityandmagnetism.child('cells')
+currentsRef = electricityandmagnetism.child('currents')
+electricFieldsRef = electricityandmagnetism.child('electricFields')
+magnetismOfCurrentsRef = electricityandmagnetism.child('magnetismOfCurrents')
 
 # Electromagnetic Induction
 electromagneticInductionRef = physicsRef.child('electromagneticInduction')
-powerGeneration&transmissionRef = electromagneticInductionRef.child('powerGeneration&transmission')
+powerGenerationandtransmissionRef = electromagneticInductionRef.child('powerGenerationandtransmission')
 capacitanceRef = electromagneticInductionRef.child('capacitance')
 electromagneticInductionRef = electromagneticInductionRef.child('electromagneticInduction')
 
@@ -53,23 +53,23 @@ fieldsRef = physicsRef.child('fields')
 describingFieldsRef = fieldsRef.child('describingFields')
 fieldsAtWorkRef = fieldsRef.child('fieldsAtWork')
 
-# Measurements & Uncertainty
-measurements&UncertaintyRef = physicsRef.child('measurements&Uncertainty')
-measurementsRef = measurements&UncertaintyRef.child('measurements')
-uncertainty&errorsRef = measurements&UncertaintyRef.child('uncertainty&errors')
-vectors&scalarsRef = measurements&UncertaintyRef.child('vectors&scalars')
+# Measurements and Uncertainty
+measurementsandUncertaintyRef = physicsRef.child('measurementsandUncertainty')
+measurementsRef = measurementsandUncertaintyRef.child('measurements')
+uncertaintyanderrorsRef = measurementsandUncertaintyRef.child('uncertaintyanderrors')
+vectorsandscalarsRef = measurementsandUncertaintyRef.child('vectorsandscalars')
 
 # Mechanics
 mechanicsRef = physicsRef.child('mechanics')
 forcesRef = mechanicsRef.child('forces')
-momentum&impulseRef = mechanicsRef.child('momentum&impulse')
+momentumandimpulseRef = mechanicsRef.child('momentumandimpulse')
 motionRef = mechanicsRef.child('motion')
 workEnergyPowerRef = mechanicsRef.child('workEnergyPower')
 
-# Quantum & Nuclear Physics
-quantum&nuclearPhysicsRef = physicsRef.child('quantum&nuclearPhysics')
-matter&radiationRef = quantum&nuclearPhysicsRef.child('matter&radiation')
-nuclearPhysicsRef = quantum&nuclearPhysicsRef.child('nuclearPhysics')
+# Quantum and Nuclear Physics
+quantumandnuclearPhysicsRef = physicsRef.child('quantumandnuclearPhysics')
+matterandradiationRef = quantumandnuclearPhysicsRef.child('matterandradiation')
+nuclearPhysicsRef = quantumandnuclearPhysicsRef.child('nuclearPhysics')
 
 # Thermal
 thermalRef = physicsRef.child('thermal')
@@ -82,7 +82,7 @@ dopplerEffectRef = wavePhenomenaRef.child('dopplerEffect')
 harmonicMotionRef = wavePhenomenaRef.child('harmonicMotion')
 interferenceRef = wavePhenomenaRef.child('interference')
 resolutionRef = wavePhenomenaRef.child('resolution')
-single-slitDiffractionRef = wavePhenomenaRef.child('single-slitDiffraction')
+singleslitDiffractionRef = wavePhenomenaRef.child('single-slitDiffraction')
 
 # Waves
 wavesRef = physicsRef.child('waves')
@@ -110,36 +110,36 @@ maclaurinSeriesRef = calculusRef.child('maclaurinSeries')
 
 # Functions
 functionsRef = mathAARef.child('functions')
-exponent-LogFunctionsRef = functionsRef.child('exponent-LogFunctions')
-modulus&InequalitiesRef = functionsRef.child('modulus&Inequalities')
+exponentLogFunctionsRef = functionsRef.child('exponent-LogFunctions')
+modulusandInequalitiesRef = functionsRef.child('modulusandInequalities')
 polynomialsRef = functionsRef.child('polynomials')
 propertiesOfFunctionsRef = functionsRef.child('propertiesOfFunctions')
 quadraticsRef = functionsRef.child('quadratics')
 rationalFunctionsRef = functionsRef.child('rationalFunctions')
 transformationsRef = functionsRef.child('transformations')
 
-# Geometry & Trignometry
-geometry&TrignometryRef = mathAARef.child('geometry&Trignometry')
-geometry&ShapesRef = geometry&TrignometryRef.child('geometry&Shapes')
-trigonometricFunctionsRef = geometry&TrignometryRef.child('trigonometricFunctions')
-vectorsRef = geometry&TrignometryRef.child('vectors')
+# Geometry and Trignometry
+geometryandTrignometryRef = mathAARef.child('geometryandTrignometry')
+geometryandShapesRef = geometryandTrignometryRef.child('geometryandShapes')
+trigonometricFunctionsRef = geometryandTrignometryRef.child('trigonometricFunctions')
+vectorsRef = geometryandTrignometryRef.child('vectors')
 
-# Numbers & Algebra
-numbers&AlgebraRef = mathAARef.child('numbers&Algebra')
-binomialTheoremRef = numbers&AlgebraRef.child('binomialTheorem')
-complexNumbersRef = numbers&AlgebraRef.child('complexNumbers')
-countingPrinciplesRef = numbers&AlgebraRef.child('countingPrinciples')
-exponents&LogsRef = numbers&AlgebraRef.child('exponents&Logs')
-proofsRef = numbers&AlgebraRef.child('proofs')
-sequences&SeriesRef = numbers&AlgebraRef.child('sequences&Series')
-systemsOfEquationsRef = numbers&AlgebraRef.child('systemsOfEquations')
+# Numbers and Algebra
+numbersandAlgebraRef = mathAARef.child('numbersandAlgebra')
+binomialTheoremRef = numbersandAlgebraRef.child('binomialTheorem')
+complexNumbersRef = numbersandAlgebraRef.child('complexNumbers')
+countingPrinciplesRef = numbersandAlgebraRef.child('countingPrinciples')
+exponentsandLogsRef = numbersandAlgebraRef.child('exponentsandLogs')
+proofsRef = numbersandAlgebraRef.child('proofs')
+sequencesandSeriesRef = numbersandAlgebraRef.child('sequencesandSeries')
+systemsOfEquationsRef = numbersandAlgebraRef.child('systemsOfEquations')
 
-# Statistics & Probability
-statistics&ProbabilityRef = mathAARef.child('statistics&Probability')
-probabilityRef = statistics&ProbabilityRef.child('probability')
-statisticsRef = statistics&ProbabilityRef.child('statistics')
-bivariateStatisticsRef = statistics&ProbabilityRef.child('bivariateStatistics')
-distributionsRef = statistics&ProbabilityRef.child('distributions')
+# Statistics and Probability
+statisticsandProbabilityRef = mathAARef.child('statisticsandProbability')
+probabilityRef = statisticsandProbabilityRef.child('probability')
+statisticsRef = statisticsandProbabilityRef.child('statistics')
+bivariateStatisticsRef = statisticsandProbabilityRef.child('bivariateStatistics')
+distributionsRef = statisticsandProbabilityRef.child('distributions')
 
 # ______________________________________________________USER REF_____________________________________________________ #
 
