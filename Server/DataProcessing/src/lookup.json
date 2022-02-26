@@ -1,0 +1,36 @@
+{
+  "math-aa-sl": {
+    "num&alg": {
+      "seq&ser": {
+        "geometric": 0.2,
+        "arithmatic": 0.4,
+        "sequence": 0.8,
+        "common ratio": 0.9,
+        "common difference": 0.9
+      },
+      "exp&log": {
+        "log": 0.8,
+        "ln": 0.8
+      }
+    },
+    "func": {
+      "funcprop": {
+        "function": 0.3,
+        "minimum": 0.3,
+        "maximum": 0.3,
+        "range": 0.4,
+        "domain": 0.4,
+        "coordinates": 0.2
+      }
+    }
+  },
+  "math-aa-hl": {
+
+  },
+  "math-ai-sl": {
+
+  },
+  "math-ai-hl": {
+    
+  }
+}

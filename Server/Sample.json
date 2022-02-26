@@ -1,75 +1,76 @@
-{   "Tetsis" : [
 {
-    "physicsHL" : [
+  "Tetsis" : [
+    {
+      "physicsHL" : [
         {
-            "paper1" : [
+          "paper1" : [
+            {
+              "mechanics" : [
                 {
-                    "mechanics" : [
-                        {
-                            "id" : "id",
-                            "photoUrl" : "http://",
-                            "answer" : "http://"
-                        },
-                        {
-                            "id" : "id",
-                            "photoUrl" : "http://",
-                            "answer" : "http://"
-                        }
-                    ]
-                }
-            ],
-            "paper1" : [
+                  "id" : "id",
+                  "photoUrl" : "http://",
+                  "answer" : "http://"
+                },
                 {
-                    "mechanics" : [
-                        {
-                            "id" : "id",
-                            "photoUrl" : "http://",
-                            "answer" : "http://"
-                        },
-                        {
-                            "id" : "id",
-                            "photoUrl" : "http://",
-                            "answer" : "http://"
-                        }
-                    ]
+                  "id" : "id",
+                  "photoUrl" : "http://",
+                  "answer" : "http://"
                 }
-            ]
+              ]
+            }
+          ],
+          "paper1" : [
+            {
+              "mechanics" : [
+                {
+                  "id" : "id",
+                  "photoUrl" : "http://",
+                  "answer" : "http://"
+                },
+                {
+                  "id" : "id",
+                  "photoUrl" : "http://",
+                  "answer" : "http://"
+                }
+              ]
+            }
+          ]
         }
-    ]
-},
-{
-    "physicsHL" : [
+      ]
+    },
+    {
+      "physicsHL" : [
         {
-            "paper1" : [
-                {
-                    "id" : "id",
-                    "topic" : "topic",
-                    "photoUrl" : "http://",
-                    "answer" : "http://"
-                },   
-                {
-                    "id" : "id",
-                    "topic" : "topic",
-                    "photoUrl" : "http://",
-                    "answer" : "http://"
-                }            
-            ],
-            "paper2" : [
-                {
-                    "id" : "id",
-                    "topic" : "topic",
-                    "photoUrl" : "http://",
-                    "answer" : "http://"
-                },       
-                {
-                    "id" : "id",
-                    "topic" : "topic",
-                    "photoUrl" : "http://",
-                    "answer" : "http://"
-                }        
-            ]
-        } 
-    ]
-}
-]
+          "paper1" : [
+            {
+              "id" : "id",
+              "topic" : "topic",
+              "photoUrl" : "http://",
+              "answer" : "http://"
+            },
+            {
+              "id" : "id",
+              "topic" : "topic",
+              "photoUrl" : "http://",
+              "answer" : "http://"
+            }
+          ],
+          "paper2" : [
+            {
+              "id" : "id",
+              "topic" : "topic",
+              "photoUrl" : "http://",
+              "answer" : "http://"
+            },
+            {
+              "id" : "id",
+              "topic" : "topic",
+              "photoUrl" : "http://",
+              "answer" : "http://"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
