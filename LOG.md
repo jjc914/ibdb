@@ -188,3 +188,15 @@ I don't even know if this will be useful but there you go josh I am leaving the 
 <br>
 <strong>Description: </strong>
 Got the auth func working but now have to figure out how a rt db works in browsers also fixed some bugs in the firestore.py code
+
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong> <em>16:00 - 16:43</em>
+<br>
+<strong>Date: </strong> <em>26.2.22</em>
+<br>
+<strong>Goal: </strong> Make sh script to upload documents to IPFS
+<br>
+<strong>Description: </strong>
+Yummy sh tbh best lang in the world dk why the js won sh the real goat
