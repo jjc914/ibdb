@@ -5,3 +5,25 @@ export const registerUser = async (userId: string) => {
   //save to realtime database
   set(ref(rtdb, '/users'), userId, 
 }
+
+
+export const getUser = async (userId: string) => {
+  return ref(rtdb, '/users/' + userId)
+}
+
+export const saveUser = async (userId: string, user: any) => {
+  set(ref(rtdb, '/users/' + userId), user)
+}
+
+export const getUserList = async () => {
+  return ref(rtdb, '/users')
+}
+
+export const getPhysicsList = async () => {
+  return ref(rtdb, '/physics')
+}
+
+export const getMathList = async () => {
+  return ref(rtdb, '/math')
+}
+

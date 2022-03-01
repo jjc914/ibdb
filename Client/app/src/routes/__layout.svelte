@@ -42,7 +42,7 @@
 </style>
 
 <slot />
- <li class:active={$page.url.pathname === '/'}>
+<li class:active={$page.url.pathname === '/'}>
   <a class="link" sveltekit:prefetch href="/">index</a>
 </li>
 <li class:active={$page.url.pathname === '/Sorry'}>
