@@ -203,7 +203,7 @@ Yummy sh tbh best lang in the world dk why the js won sh the real goat
 
 <strong>Name: </strong> Arctesian
 <br>
-<strong>Time: </strong> <em>13:00 - 13:22</em>
+<strong>Time: </strong> <em>13:00 - 13:45</em>
 <br>
 <strong>Date: </strong> <em>3.4.22</em>
 <br>
