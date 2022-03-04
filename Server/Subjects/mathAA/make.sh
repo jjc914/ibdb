@@ -1,0 +1,5 @@
+mkdir calculus
+mkdir functions
+mkdir geometryAndTrigonometry
+mkdir numbersAndAlgebra 
+mkdir statisticsAndProbability

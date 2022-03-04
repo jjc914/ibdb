@@ -1,0 +1,3 @@
+mkdir capacitance
+mkdir electromagneticInduction
+mkdir powerGenerationAndtransmission

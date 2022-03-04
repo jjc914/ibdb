@@ -1,0 +1,5 @@
+mkdir oscillations
+mkdir standingWaves
+mkdir travellingWaves
+mkdir waveBehavior
+mkdir waveCharacteristics

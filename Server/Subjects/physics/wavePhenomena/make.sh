@@ -1,0 +1,5 @@
+mkdir dopplerEffect
+mkdir harmonicMotion
+mkdir interference
+mkdir resolution
+mkdir single-slitDiffraction

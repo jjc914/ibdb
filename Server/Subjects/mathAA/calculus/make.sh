@@ -1,0 +1,5 @@
+mkdir differentialCalculus
+mkdir differentialEquations
+mkdir integralCalculus 
+mkdir kinematics
+mkdir maclaurinSeries

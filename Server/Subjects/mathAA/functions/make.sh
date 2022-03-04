@@ -1,0 +1,7 @@
+mkdir exponent-LogFunctions
+mkdir modulusAndInequalities
+mkdir polynomials
+mkdir propertiesOfFunctions
+mkdir quadratics
+mkdir rationalFunctions
+mkdir transformations

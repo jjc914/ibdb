@@ -1,0 +1,7 @@
+mkdir binomialTheorem
+mkdir complexNumbers
+mkdir countingPrinciples
+mkdir exponentsAndLogs
+mkdir proofs
+mkdir sequencesAndSeries
+mkdir systemsOfEquations

@@ -200,3 +200,14 @@ Got the auth func working but now have to figure out how a rt db works in browse
 <br>
 <strong>Description: </strong>
 Yummy sh tbh best lang in the world dk why the js won sh the real goat
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong> <em>13:00 - 13:22</em>
+<br>
+<strong>Date: </strong> <em>3.4.22</em>
+<br>
+<strong>Goal: </strong> Made output files
+<br>
+<strong>Description: </strong>
+shell magic 

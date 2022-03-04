@@ -1,0 +1,4 @@
+mkdir forces
+mkdir momentumAndimpulse
+mkdir motion
+mkdir workEnergyPower

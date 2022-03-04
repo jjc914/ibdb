@@ -1,0 +1,3 @@
+mkdir geometryAndShapes
+mkdir trigonometricFunctions
+mkdir vectors

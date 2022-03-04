@@ -1,0 +1,4 @@
+mkdir cells
+mkdir currents
+mkdir electricFields
+mkdir magnetismOfCurrents

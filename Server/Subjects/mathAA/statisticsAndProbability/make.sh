@@ -1,0 +1,4 @@
+mkdir bivariateStatistics
+mkdir distributions
+mkdir probability
+mkdir statistics

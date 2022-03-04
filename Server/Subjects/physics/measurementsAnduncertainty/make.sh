@@ -1,0 +1,3 @@
+mkdir measurements
+mkdir uncertaintyAnderrors
+mkdir vectorsAndscalars

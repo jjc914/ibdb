@@ -1,0 +1,12 @@
+mkdir atomicPhysics
+mkdir circularMotion
+mkdir electricityAndmagnetism
+mkdir electromagneticInduction
+mkdir energyProduction
+mkdir fields
+mkdir measurementsAnduncertainty
+mkdir mechanics
+mkdir quantumAndnuclearPhysics
+mkdir thermal
+mkdir wavePhenomena
+mkdir waves

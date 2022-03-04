@@ -1,0 +1,3 @@
+mkdir circularMotion
+mkdir gravitation
+

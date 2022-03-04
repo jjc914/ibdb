@@ -1,0 +1,3 @@
+mkdir discreteEnergyAndRadioactivity
+mkdir nuclearReactions
+mkdir structureOfMatter
