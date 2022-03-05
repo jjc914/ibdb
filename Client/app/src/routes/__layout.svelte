@@ -41,21 +41,3 @@
   }
 </style>
 
-<slot />
-<li class:active={$page.url.pathname === '/'}>
-  <a class="link" sveltekit:prefetch href="/">index</a>
-</li>
-<li class:active={$page.url.pathname === '/Sorry'}>
-  <a class="link" sveltekit:prefetch href="/Sorry">Sorry</a>
-</li>
-<li class:active={$page.url.pathname === '/login'}>
-  <a class="link" sveltekit:prefetch href="/login">login</a>
-</li>
-<li class:active={$page.url.pathname === '/home'}>
-  <a class="link" sveltekit:prefetch href="/home">home</a>
-</li>
-<div class:active={$page.url.pathname === '/home'}>
-  <a class="link" sveltekit:prefetch href="/home">
-    <img src={logo} class="logo" alt="logo" />
-  </a>
-</div>
