@@ -1,24 +1,17 @@
 <script lang="ts">
-  import { app } from '../Lib/Firestore/firestoreSetup'
-  import type firestore from "firebase/app"
+  import { app } from '$lib/Firestore/firestoreSetup'
+  import firebase from 'firebase/app'
   import {
     getAuth,
     signInWithRedirect,
     GoogleAuthProvider,
   } from 'firebase/auth'
-  onMount(() => {
-    firebase.auth().onAuthStateChanged((user) => {
-      authStore.set({
-        isLoggedIn: user !== null,
-        user,
-        firebaseControlled: true,
-      });
-    });
+
   const provider = new GoogleAuthProvider()
   const auth = getAuth()
   function signIn() {
-    signInWithRedirect(auth, provider)
-    
+    // signInWithRedirect(auth, provider)
+    window.open('http://localhost:3000/account')
   }
 
   function signOut() {
@@ -57,9 +50,9 @@
 
   <button on:click={() => signIn()}>
     <div
-      class="flex backpeepee p-3 rounded-3xl shadow-lg  border-2
-      hover:border-4 shadow-lg duration-750 ease-in-out transition
-      hover:scale-105 drop-shadow-2xl">
+      class="flex backpeepee p-3 rounded-3xl shadow-lg border-2 hover:border-4
+      shadow-lg duration-750 ease-in-out transition hover:scale-105
+      drop-shadow-2xl">
       <img
         src="https://img.icons8.com/fluency-systems-filled/96/000000/google-logo.png"
         alt="google icon" />

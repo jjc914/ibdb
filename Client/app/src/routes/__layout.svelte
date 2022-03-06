@@ -39,5 +39,9 @@
     transition: color 0.2s linear;
     background-color: transparent;
   }
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 </style>
 
+<slot />

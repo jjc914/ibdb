@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 import { getFirestore } from 'firebase/firestore'
 import { getDatabase } from 'firebase/database'
-import authStore from "src/stores/authStore"
+// import authStore from '/Users/stephen/Desktop/school/ibdb/Client/app/src/stores/authStore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -24,4 +24,3 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig)
 export const rtdb = getDatabase(app)
-

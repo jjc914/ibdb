@@ -189,7 +189,6 @@ I don't even know if this will be useful but there you go josh I am leaving the 
 <strong>Description: </strong>
 Got the auth func working but now have to figure out how a rt db works in browsers also fixed some bugs in the firestore.py code
 
-
 <strong>Name: </strong> Arctesian
 <br>
 <strong>Time: </strong> <em>16:00 - 16:43</em>
@@ -210,4 +209,15 @@ Yummy sh tbh best lang in the world dk why the js won sh the real goat
 <strong>Goal: </strong> Made output files
 <br>
 <strong>Description: </strong>
-shell magic 
+shell magic
+
+<strong>Name: </strong> Arctesian
+<br>
+<strong>Time: </strong> <em>09:00 - 10:00</em>
+<br>
+<strong>Date: </strong> <em>3.6.22</em>
+<br>
+<strong>Goal: </strong> Input Form
+<br>
+<strong>Description: </strong>
+ok now that boiler plate is there il work on making a clickable demo to appease lord lagos
