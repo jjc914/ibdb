@@ -189,6 +189,8 @@ I don't even know if this will be useful but there you go josh I am leaving the 
 <strong>Description: </strong>
 Got the auth func working but now have to figure out how a rt db works in browsers also fixed some bugs in the firestore.py code
 
+<hr>
+
 <strong>Name: </strong> Arctesian
 <br>
 <strong>Time: </strong> <em>16:00 - 16:43</em>
@@ -199,6 +201,8 @@ Got the auth func working but now have to figure out how a rt db works in browse
 <br>
 <strong>Description: </strong>
 Yummy sh tbh best lang in the world dk why the js won sh the real goat
+
+<hr>
 
 <strong>Name: </strong> Josh
 <br>
@@ -211,6 +215,8 @@ Yummy sh tbh best lang in the world dk why the js won sh the real goat
 <strong>Description: </strong>
 Refined the question recognition code to work with math questions better. 
 
+<hr>
+
 <strong>Name: </strong> Arctesian
 <br>
 <strong>Time: </strong> <em>13:00 - 13:45</em>
@@ -222,6 +228,8 @@ Refined the question recognition code to work with math questions better.
 <strong>Description: </strong>
 shell magic
 
+<hr>
+
 <strong>Name: </strong> Arctesian
 <br>
 <strong>Time: </strong> <em>09:00 - 10:00</em>
@@ -232,3 +240,16 @@ shell magic
 <br>
 <strong>Description: </strong>
 ok now that boiler plate is there il work on making a clickable demo to appease lord lagos
+
+<hr>
+
+<strong>Name: </strong> Josh
+<br>
+<strong>Time: </strong> <em>12:40-2:30</em>
+<br>
+<strong>Date: </strong> <em>7.3.22</em>
+<br>
+<strong>Goal: </strong> Data processing
+<br>
+<strong>Description: </strong>
+Refactored the code to make adding of edge cases easier. Also added some more edge cases. 
