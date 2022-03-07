@@ -200,6 +200,17 @@ Got the auth func working but now have to figure out how a rt db works in browse
 <strong>Description: </strong>
 Yummy sh tbh best lang in the world dk why the js won sh the real goat
 
+<strong>Name: </strong> Josh
+<br>
+<strong>Time: </strong> <em>15:00-17:00</em>
+<br>
+<strong>Date: </strong> <em>3.3.22</em>
+<br>
+<strong>Goal: </strong> Data processing
+<br>
+<strong>Description: </strong>
+Refined the question recognition code to work with math questions better. 
+
 <strong>Name: </strong> Arctesian
 <br>
 <strong>Time: </strong> <em>13:00 - 13:45</em>
