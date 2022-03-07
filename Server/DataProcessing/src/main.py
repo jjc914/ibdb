@@ -2,6 +2,7 @@ import os
 import sys
 import re
 import time
+from enum import Enum
 
 import argparse
 import numpy as np
@@ -17,6 +18,11 @@ class ArgNotADirectoryError(Exception):
     pass
 class ArgNotLogValueError(Exception):
     pass
+
+class EndType(Enum):
+    DEFAULT = 'default'
+    A_BOX = 'a_box'
+    NEXT_Q = 'next_q'
 
 def main():
     try:
@@ -81,11 +87,13 @@ def extractQuestions(inPath, outPath, document):
     zoom = dpi / 72
     magnify = fitz.Matrix(zoom, zoom)
     doc = fitz.open(inPath)
+    isFindingStart = True
     questionNumber = 0
     previousNumber = 0
     previousRect = None
     previousPageNumber = 0
     previousPage = None
+    endType = EndType.DEFAULT;
 
     questions = []
     # for each page in the doc
@@ -97,15 +105,37 @@ def extractQuestions(inPath, outPath, document):
             text = dataBox[4]
             textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
             # check to see if it is a question start using https://regexr.com/6febi
-            match = re.search('(\d+)\.\s*\\n', text)
-            Logger.log(1, text);
             # if a new question is found
-            if match:
-                questionNumber = match.group(1)
-                if not questionNumber.strip().isdigit(): continue
-                questionNumber = int(questionNumber)
-                if not (questionNumber == previousNumber + 1): continue
-                if previousRect:
+            # pageData[len(pageData) - 1] = (0, 1, 10, 0, fr'{questionNumber + 1}\n')
+
+            # deciding the ending method
+            if not isFindingStart:
+                match = re.search('(\d+)\.\s*\\n', text)
+                if match and endType == endType.DEFAULT:
+                    if not match: continue
+                    questionNumber = match.group(1)
+                    if not questionNumber.strip().isdigit(): continue
+                    questionNumber = int(questionNumber)
+                    if not (questionNumber == previousNumber + 1): continue
+                    endType = EndType.NEXT_Q
+
+                match = re.search('(?:\(a\))', text)
+                if match and endType == EndType.DEFAULT:
+                    print(text)
+                    endType = EndType.NEXT_Q
+
+                match = re.search('(?:\. ){2,}', text)
+                if match and endType == EndType.DEFAULT:
+                    print(text)
+                    endType = EndType.A_BOX
+
+                if endType == EndType.NEXT_Q:
+                    match = re.search('(\d+)\.\s*\\n', text)
+                    if not match: continue
+                    questionNumber = match.group(1)
+                    if not questionNumber.strip().isdigit(): continue
+                    questionNumber = int(questionNumber)
+                    if not (questionNumber == previousNumber + 1): continue
                     img = None
                     if i == previousPageNumber:
                         # case 1: both on the same page
@@ -125,31 +155,33 @@ def extractQuestions(inPath, outPath, document):
                         img.paste(img2, (0, img1.height))
 
                     img.save(outPath + f'page{i}object{k}.png')
-                    imgArray = np.asarray(img)
+                    isFindingStart = True
+                elif endType == EndType.A_BOX:
+                    match = re.search('(?:\. ){2,}', text)
+                    if not match: continue
+                    # do cutting here
+                    textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
+                    pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
+                    img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+                    img.save(outPath + f'page{i}object{k}.png')
+                    isFindingStart = True
 
-                    metadata = {
-                        'page': i,
-                        'obj': k,
-                        'isMultisectional': True,
-                        'tags': identifyTags(text)
-                    }
-                    questions.append((imgArray, metadata))
+            if isFindingStart:
+                endType = EndType.DEFAULT
+                match = re.search('(\d+)\.\s*\\n', text)
+                if match:
+                    questionNumber = match.group(1)
+                    if not questionNumber.strip().isdigit(): continue
+                    questionNumber = int(questionNumber)
+                    if not (questionNumber == previousNumber + 1): continue
 
-                previousNumber = questionNumber
-                # pageData[len(pageData) - 1] = (0, 1, 10, 0, fr'{questionNumber + 1}\n')
-                previousRect = textRect
-                previousPageNumber = i
-                previousPage = page
-            else:
-                match = re.search('(?:\. ){2,}', text)
-                if not match: continue
-                if not previousRect: continue
-                # do cutting here
-                textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
-                pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
-                img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-                img.save(outPath + f'page{i}object{k}.png')
-                previousRect = None
+                    # found the start!
+                    previousNumber = questionNumber
+                    previousRect = textRect
+                    previousPageNumber = i
+                    previousPage = page
+                    isFindingStart = False
+
     return questions
 
 def identifyTags(text):
