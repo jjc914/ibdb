@@ -45,8 +45,7 @@ def main():
                 document = readDocument(directory + fileName)
                 if not os.path.isdir(f'{directory}out/{fileName[:len(fileName) - 4]}/'):
                     os.mkdir(f'{directory}out/{fileName[:len(fileName) - 4]}/')
-                questionsRough = roughExtractQuestions(directory + fileName, f'{directory}out/{fileName[:len(fileName) - 4]}/', document)
-                refineQuestions(questionsRough)
+                questionsRough = extractQuestions(directory + fileName, f'{directory}out/{fileName[:len(fileName) - 4]}/', document)
     except ArgNotADirectoryError:
         Logger.log(0, '[ERROR] No such directory: enter a valid directory to scan', Color.FAIL)
     except ArgNotLogValueError:
@@ -68,16 +67,21 @@ def readDocument(path):
         docData.append(pageData)
     return docData
 
-def roughExtractQuestions(inPath, outPath, document):
+def extractQuestions(inPath, outPath, document):
     """
     KNOWN BUGS TO BE FIXED:
     1. skips the last question
     """
     dpi = 300
+    topMargin = -10
+    bottomMargin = 12
+    leftMargin = 30
+    rightMargin = 30
 
     zoom = dpi / 72
     magnify = fitz.Matrix(zoom, zoom)
     doc = fitz.open(inPath)
+    questionNumber = 0
     previousNumber = 0
     previousRect = None
     previousPageNumber = 0
@@ -94,64 +98,62 @@ def roughExtractQuestions(inPath, outPath, document):
             textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
             # check to see if it is a question start using https://regexr.com/6febi
             match = re.search('(\d+)\.\s*\\n', text)
-            if not match: continue
-            questionNumber = match.group(1)
-            if not questionNumber.strip().isdigit(): continue
-            questionNumber = int(questionNumber)
-            if not (questionNumber == previousNumber + 1): continue
-            if previousRect:
-                img = None
-                if i == previousPageNumber:
-                    # case 1: both on the same page
-                    # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, textRect.top_right))
-                    pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(0, previousRect.y0), fitz.Point(page.rect.width, textRect.y0)))
-                    img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-                else:
-                    # case 2: different pages
-                    # pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, fitz.Point(textRect.x1, page.rect.y1)))
-                    pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(0, previousRect.y0), fitz.Point(page.rect.width, page.rect.y1)))
-                    # pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(previousRect.x0, page.rect.y0), textRect.top_right))
-                    pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(0, page.rect.y0), fitz.Point(page.rect.width, textRect.y0)))
-                    img1 = Image.frombytes('RGB', [pix1.width, pix1.height], pix1.samples)
-                    img2 = Image.frombytes('RGB', [pix2.width, pix2.height], pix2.samples)
-                    img = Image.new('RGB', (max(img1.width, img2.width), img1.height + img2.height), (255, 255, 255))
-                    img.paste(img1, (0, 0))
-                    img.paste(img2, (0, img1.height))
+            Logger.log(1, text);
+            # if a new question is found
+            if match:
+                questionNumber = match.group(1)
+                if not questionNumber.strip().isdigit(): continue
+                questionNumber = int(questionNumber)
+                if not (questionNumber == previousNumber + 1): continue
+                if previousRect:
+                    img = None
+                    if i == previousPageNumber:
+                        # case 1: both on the same page
+                        # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, textRect.top_right))
+                        pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
+                        img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+                    else:
+                        # case 2: different pages
+                        # pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, fitz.Point(textRect.x1, page.rect.y1)))
+                        pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, page.rect.y1)))
+                        # pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(previousRect.x0, page.rect.y0), textRect.top_right))
+                        pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, page.rect.y0), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
+                        img1 = Image.frombytes('RGB', [pix1.width, pix1.height], pix1.samples)
+                        img2 = Image.frombytes('RGB', [pix2.width, pix2.height], pix2.samples)
+                        img = Image.new('RGB', (max(img1.width, img2.width), img1.height + img2.height), (255, 255, 255))
+                        img.paste(img1, (0, 0))
+                        img.paste(img2, (0, img1.height))
 
+                    img.save(outPath + f'page{i}object{k}.png')
+                    imgArray = np.asarray(img)
+
+                    metadata = {
+                        'page': i,
+                        'obj': k,
+                        'isMultisectional': True,
+                        'tags': identifyTags(text)
+                    }
+                    questions.append((imgArray, metadata))
+
+                previousNumber = questionNumber
+                # pageData[len(pageData) - 1] = (0, 1, 10, 0, fr'{questionNumber + 1}\n')
+                previousRect = textRect
+                previousPageNumber = i
+                previousPage = page
+            else:
+                match = re.search('(?:\. ){2,}', text)
+                if not match: continue
+                if not previousRect: continue
+                # do cutting here
+                textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
+                pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
+                img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
                 img.save(outPath + f'page{i}object{k}.png')
-                imgArray = np.asarray(img)
-
-                metadata = {
-                    'page': i,
-                    'obj': k,
-                    'isMultisectional': True,
-                    'tags': identifyTags(text)
-                }
-                questions.append((imgArray, metadata))
-
-            previousNumber = questionNumber
-            # pageData[len(pageData) - 1] = (0, 1, 10, 0, fr'{questionNumber + 1}\n')
-            previousRect = textRect
-            previousPageNumber = i
-            previousPage = page
+                previousRect = None
     return questions
 
 def identifyTags(text):
     pass
-
-def refineQuestions(roughQuestions):
-    pass
-    # for question in roughQuestions:
-    #     img = question[0]
-    #     metadata = question[1]
-    #
-    #     """
-    #     there are 2 types of questions: single-section questions and multi-section questions.
-    #     they each use different methods to discern bouding boxes.
-    #     """
-    #     data = pytesseract.image_to_data(Image.fromarray(img))
-    #     print(data)
-    #     exit()
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]
