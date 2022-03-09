@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { app } from '$lib/Firestore/firestoreSetup'
+  import { app } from '../Lib/Firestore/firestoreSetup'
   import firebase from 'firebase/app'
   import {
     getAuth,

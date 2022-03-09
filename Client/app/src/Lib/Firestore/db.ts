@@ -24,6 +24,6 @@ export const getPhysicsList = async () => {
 }
 
 export const getMathList = async () => {
-  return ref(rtdb, '/math')
+  return ref(rtdb, '/mathAA')
 }
 
