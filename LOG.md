@@ -253,3 +253,18 @@ ok now that boiler plate is there il work on making a clickable demo to appease 
 <br>
 <strong>Description: </strong>
 Refactored the code to make adding of edge cases easier. Also added some more edge cases. 
+
+<hr>
+
+<strong>Name: </strong> Stephen
+<br>
+<strong>Time: </strong> <em>10:10 - 10:40</em>
+<br>
+<strong>Date: </strong> <em>9.3.22</em>
+<br>
+<strong>Goal: </strong> Getting ready for data
+<br>
+<strong>Description: </strong>
+Made some stuff so its pretty much 1 click upload 
+
+
