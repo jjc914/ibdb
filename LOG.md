@@ -268,3 +268,16 @@ Refactored the code to make adding of edge cases easier. Also added some more ed
 Made some stuff so its pretty much 1 click upload 
 
 
+<hr>
+
+<strong>Name: </strong> Stephen
+<br>
+<strong>Time: </strong> <em>9:10 - 10:40</em>
+<br>
+<strong>Date: </strong> <em>13.3.22</em>
+<br>
+<strong>Goal: </strong> Front end 
+<br>
+<strong>Description: </strong>
+Made leaderboard discord and game portal, still need to set up firebase stuff
+

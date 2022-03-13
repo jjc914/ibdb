@@ -36,7 +36,7 @@
 </svelte:head>
 <div class="back flex justify-center items-center m-auto">
   <div class="flex one flex-col text-center">
-    <a class="link" sveltekit:prefetch href="/home">
+    <a class="link" sveltekit:prefetch href="/database">
       <img src={logo} class="logo drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />

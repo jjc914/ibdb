@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ref, onValue } from 'firebase/database'
-  import { rtdb } from '$Lib/Firestore/firestoreSetup'
+  import { rtdb } from '../Lib/Firestore/firestoreSetup'
 
   const subjects = ref(rtdb, '/subjects')
   onValue(subjects, (snapshot) => {
