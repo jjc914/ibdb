@@ -39,6 +39,7 @@
     cursor: pointer;
     text-align: center;
     font-weight: 600;
+    transition-duration: 1000ms;
   }
 </style>
 

@@ -15,19 +15,18 @@
     background-color: #f0f0f0;
   }
   .logo {
-    width: 20rem;
+    width: 20vw;
     text-align: center;
     margin: auto;
   }
   .one {
     width: 50vw;
+    background-color: #272727;
+    transition-duration: 1000ms;
   }
   .two {
     width: 50vw;
-  }
-  .flex {
-    display: flex;
-    justify-content: center;
+    transition-duration: 1000ms;
   }
 </style>
 
