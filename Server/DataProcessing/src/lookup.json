@@ -1,5 +1,5 @@
 {
-  "math-aa-sl": {
+  "math": {
     "num&alg": {
       "seq&ser": {
         "geometric": 0.2,
@@ -24,13 +24,7 @@
       }
     }
   },
-  "math-aa-hl": {
+  "phys": {
 
-  },
-  "math-ai-sl": {
-
-  },
-  "math-ai-hl": {
-    
   }
 }

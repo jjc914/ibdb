@@ -2,6 +2,7 @@ import os
 import sys
 import re
 import time
+import json as js
 from enum import Enum
 
 import argparse
@@ -16,6 +17,8 @@ from logger import Color
 
 class ArgNotADirectoryError(Exception):
     pass
+class ArgNotAFileError(Exception):
+    pass
 class ArgNotLogValueError(Exception):
     pass
 
@@ -24,10 +27,23 @@ class EndType(Enum):
     A_BOX = 'a_box'
     NEXT_Q = 'next_q'
 
+class Subject(Enum):
+    NONE = 'none'
+    MATH = 'math'
+    MATH_AA = 'math_aa'
+    MATH_AI = 'math_ai'
+    PHYS = 'phys'
+
+class Level(Enum):
+    NONE = 'none'
+    HL = 'hl'
+    SL = 'sl'
+
 def main():
     try:
         parser = argparse.ArgumentParser(description='Parse IBDP past papers for individual questions and question tags.')
         parser.add_argument('-d', dest='dir', type=checkArgPathValue, help='the directory that contains the pdf files to search (automatically the working directory)')
+        parser.add_argument('-c', dest='classf', type=checkArgFileValue, help='the file that contains the classification data (automatically searches for classification.json in the working directory)')
         parser.add_argument('-log', dest='log', type=checkArgLogValue, help='sets progress logging detail (only important 0-1-2 everything)')
         args = parser.parse_args()
 
@@ -43,22 +59,31 @@ def main():
             if args.dir[len(args.dir) - 1] != '/':
                 args.dir += '/'
             directory = args.dir
+
+        classificationJson = None
+        if not args.classf:
+            args.classf = 'classification.json'
+        with open(args.classf) as file:
+            classificationJson = js.load(file)
+
+        if not os.path.isdir(f'{directory}out/'):
+            os.mkdir(f'{directory}out/')
         for fileName in os.listdir(args.dir):
             if getFileExtension(fileName) == 'pdf':
                 Logger.log(2, '')
                 Logger.log(2, '-' * len(fileName))
                 Logger.log(1, f'Reading {fileName}...', color=Color.BOLD)
-                document = readDocument(directory + fileName)
+                document = readDocument(f'{directory}{fileName}')
                 if not os.path.isdir(f'{directory}out/{fileName[:len(fileName) - 4]}/'):
                     os.mkdir(f'{directory}out/{fileName[:len(fileName) - 4]}/')
-                questionsRough = extractQuestions(directory + fileName, f'{directory}out/{fileName[:len(fileName) - 4]}/', document)
+                textData = extractQuestions(f'{directory}{fileName}', f'{directory}out/{fileName[:len(fileName) - 4]}/', document)
+                classify(classificationJson, textData)
+
     except ArgNotADirectoryError:
         Logger.log(0, '[ERROR] No such directory: enter a valid directory to scan', Color.FAIL)
     except ArgNotLogValueError:
         Logger.log(0, '[ERROR] Expected integer value between 0 and 2 inclusive', Color.FAIL)
 
-# this was such a pain to finally figure out, i recommend never touching the structure of PDF files with a 10 foot pole
-# TODO: https://blog.didierstevens.com/programs/pdf-tools/ could probably get more information using custom pdf parser
 # TODO: parse questions and markscheme differently
 def readDocument(path):
     doc = fitz.open(path)
@@ -94,22 +119,21 @@ def extractQuestions(inPath, outPath, document):
     previousPageNumber = 0
     previousPage = None
     endType = EndType.DEFAULT;
+    textElements = []
 
-    questions = []
+    textData = {}
+
     # for each page in the doc
     for i, page in enumerate(doc):
         pageData = document[i]['pageData']
-        # pageData.append((0, 1, 10, 0, r'1.\n'))
+
         # for each dataBox in the page
         for k, dataBox in enumerate(pageData):
             text = dataBox[4]
             textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
-            # check to see if it is a question start using https://regexr.com/6febi
-            # if a new question is found
-            # pageData[len(pageData) - 1] = (0, 1, 10, 0, fr'{questionNumber + 1}\n')
 
-            # deciding the ending method
             if not isFindingStart:
+                # deciding the ending method
                 match = re.search('(\d+)\.\s*\\n', text)
                 if match and endType == endType.DEFAULT:
                     if not match: continue
@@ -119,16 +143,18 @@ def extractQuestions(inPath, outPath, document):
                     if not (questionNumber == previousNumber + 1): continue
                     endType = EndType.NEXT_Q
 
+                # TODO: Change this to a more specific specification. Draw up a tree for conditions of question types.
                 match = re.search('(?:\(a\))', text)
                 if match and endType == EndType.DEFAULT:
-                    print(text)
                     endType = EndType.NEXT_Q
 
                 match = re.search('(?:\. ){2,}', text)
                 if match and endType == EndType.DEFAULT:
-                    print(text)
                     endType = EndType.A_BOX
 
+                textElements.append(text)
+
+                # check question type and see if EOQ
                 if endType == EndType.NEXT_Q:
                     match = re.search('(\d+)\.\s*\\n', text)
                     if not match: continue
@@ -136,36 +162,38 @@ def extractQuestions(inPath, outPath, document):
                     if not questionNumber.strip().isdigit(): continue
                     questionNumber = int(questionNumber)
                     if not (questionNumber == previousNumber + 1): continue
+
                     img = None
                     if i == previousPageNumber:
                         # case 1: both on the same page
-                        # pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, textRect.top_right))
                         pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
                         img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
                     else:
                         # case 2: different pages
-                        # pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(previousRect.top_left, fitz.Point(textRect.x1, page.rect.y1)))
                         pix1 = previousPage.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, page.rect.y1)))
-                        # pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(previousRect.x0, page.rect.y0), textRect.top_right))
                         pix2 = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, page.rect.y0), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
                         img1 = Image.frombytes('RGB', [pix1.width, pix1.height], pix1.samples)
                         img2 = Image.frombytes('RGB', [pix2.width, pix2.height], pix2.samples)
                         img = Image.new('RGB', (max(img1.width, img2.width), img1.height + img2.height), (255, 255, 255))
                         img.paste(img1, (0, 0))
                         img.paste(img2, (0, img1.height))
-
-                    img.save(outPath + f'page{i}object{k}.png')
                     isFindingStart = True
+
                 elif endType == EndType.A_BOX:
                     match = re.search('(?:\. ){2,}', text)
                     if not match: continue
-                    # do cutting here
+
                     textRect = fitz.Rect(dataBox[0], dataBox[1], dataBox[2], dataBox[3])
                     pix = page.get_pixmap(matrix=magnify, clip=fitz.Rect(fitz.Point(leftMargin, previousRect.y0 + topMargin), fitz.Point(page.rect.width - rightMargin, textRect.y0 - bottomMargin)))
                     img = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-                    img.save(outPath + f'page{i}object{k}.png')
                     isFindingStart = True
 
+                # found the end this time
+                if isFindingStart:
+                    textData[f'{outPath}page{i}object{k}.png'] = textElements[:]
+                    img.save(f'{outPath}page{i}object{k}.png')
+
+            # now finding start
             if isFindingStart:
                 endType = EndType.DEFAULT
                 match = re.search('(\d+)\.\s*\\n', text)
@@ -175,17 +203,46 @@ def extractQuestions(inPath, outPath, document):
                     questionNumber = int(questionNumber)
                     if not (questionNumber == previousNumber + 1): continue
 
-                    # found the start!
+                    # found the start
                     previousNumber = questionNumber
                     previousRect = textRect
                     previousPageNumber = i
                     previousPage = page
                     isFindingStart = False
+                    textElements.clear()
 
-    return questions
+    return textData
 
-def identifyTags(text):
-    pass
+def classify(json, textData):
+    for file, data in textData.items():
+        origin = file.split('/')[-2]
+        subject = Subject.NONE
+        level = Level.NONE
+        if 'math' in origin.lower():
+            subject = Subject.MATH
+            if 'hl' in origin.lower():
+                level = Level.HL
+            elif 'sl' in origin.lower():
+                level = Level.SL
+
+        subsectionWeights = {}
+        subsubsectionWeights = {}
+        for text in data:
+            for subsection, subsubsections in json[subject.value].items():
+                for subsubsection, subsubsections in subsubsections.items():
+                    for word, weight in subsubsections.items():
+                        if word in text:
+                            if subsection in subsectionWeights:
+                                subsectionWeights[subsection] += 1
+                            else:
+                                subsectionWeights[subsection] = 1
+                            if subsubsection in subsubsectionWeights:
+                                subsubsectionWeights[subsubsection] += 1
+                            else:
+                                subsubsectionWeights[subsubsection] = 1
+        print(file)
+        print(subsectionWeights)
+        print(subsubsectionWeights)
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]
@@ -201,6 +258,12 @@ def checkArgPathValue(path):
         return path
     else:
         raise ArgNotADirectoryError
+
+def checkArgFileValue(file):
+    if os.path.isfile(file):
+        return file
+    else:
+        raise ArgNotAFileError
 
 def checkArgLogValue(value):
     if value in ['0', '1', '2']:
