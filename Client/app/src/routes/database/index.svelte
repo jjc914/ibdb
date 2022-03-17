@@ -59,20 +59,26 @@
     background-color: #272727;
   }
   .backpeepee {
-    background-color: #f0f0f0;
+    background-color: #3d3c3c;
   }
   .back2 {
     color: #272727;
   }
-  button {
-    background-color: #8c8f8a;
+  p {
+    display: flex;
+    text-align: center;
+    margin: auto;
+  }
+  a {
+    background-color: #0f92c6;
     color: #f0f0f0;
     width: 20vw;
     height: 10vw;
+    display: flex;
     margin: 1vw;
     border-radius: 1rem;
   }
-  button:hover {
+  a:hover {
     background-color: #b3b6b1;
   }
 </style>
@@ -81,24 +87,54 @@
   <div class="backpeepee w-3/4 p-6 rounded-3xl ">
     <div class="m-auto">
 
-      <h1 class="bg-white text-xl text-cyan-500 text-center py-2 px-4 rounded ">
+      <h1
+        class="text-xl text-white text-center py-2 px-4 rounded-3xl
+        bg-neutral-600">
         Select your subjects
       </h1>
       <br />
-      <div class=" w-full m-auto flex flex-wrap">
-        <button>Math AA</button>
-        <button>Math AI</button>
-        <button>Physics</button>
-        <button>Chemistry</button>
-        <button>Biology</button>
-        <button>Computer Science</button>
-        <button>Economics</button>
-        <button>Geography</button>
-        <button>History</button>
-        <button>Psychology</button>
-        <button>English Lang Lit</button>
-        <button>English Lit</button>
-        <button>Chinese BA</button>
+      <div
+        class=" w-full m-auto items-center flex text-center justify-center
+        flex-wrap">
+        <a href="">
+          <p>Math AA</p>
+        </a>
+        <a href="">
+          <p>Math AI</p>
+        </a>
+        <a href="">
+          <p>Physics</p>
+        </a>
+        <a href="">
+          <p>Chemistry</p>
+        </a>
+        <a href="">
+          <p>Biology</p>
+        </a>
+        <a href="">
+          <p>Computer Science</p>
+        </a>
+        <a href="">
+          <p>Economics</p>
+        </a>
+        <a href="">
+          <p>Geography</p>
+        </a>
+        <a href="">
+          <p>History</p>
+        </a>
+        <a href="">
+          <p>Psychology</p>
+        </a>
+        <a href="">
+          <p>English Lang Lit</p>
+        </a>
+        <a href="">
+          <p>English Lit</p>
+        </a>
+        <a href="">
+          <p>Chinese BA</p>
+        </a>
       </div>
 
     </div>

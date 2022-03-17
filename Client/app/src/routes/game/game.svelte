@@ -32,13 +32,13 @@
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <div class="flex flex-col backpeepee p-5 rounded-3xl drop-shadow-2xl">
+  <div class="flex flex-col backpeepee p-5 m-8 rounded-3xl drop-shadow-2xl">
     <h1 class="text-2xl float-left">Question:</h1>
     <br />
     <img src={test} alt="question" class="rounded-xl" />
     <br />
     <div
-      class="flex w-full space-x-4 m-auto object-center text-center
+      class="flex w-3/4 space-x-4 m-auto object-center text-center
       content-center flex-row">
       <div class="flex flex-col ansl">
         <h1 class="text-xl text-center">A</h1>

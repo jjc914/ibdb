@@ -93,7 +93,8 @@
   }
 
   input[type='checkbox']:checked {
-    background-color: #a3fd88;
+    background-color: #fd8c88;
+    border: 0.15em solid #fd8c88;
   }
 </style>
 
@@ -102,11 +103,11 @@
 </svelte:head>
 
 <div class="flex justify-center items-center h-screen back">
-  <div class="backpeepee w-3/4 p-6 rounded-3xl ">
+  <div class="backpeepee p-6 rounded-2xl ">
     <div class="m-auto">
       {#if page === 0}
         <h1
-          class="bg-white text-xl text-cyan-500 text-center py-2 px-4 rounded ">
+          class="bg-white text-xl text-green-500 text-center py-2 px-4 rounded ">
           Select your subjects
         </h1>
         <br />
@@ -166,7 +167,13 @@
             </label>
           </div>
         </form>
-        <button on:click|once={next}>Next</button>
+        <br />
+        <button
+          class="p-2 rounded-xl w-full text-center bg-green-500 text-white
+          hover:bg-green-700"
+          on:click|once={next}>
+          Next
+        </button>
       {/if}
       {#if page === 1}
         <h1
@@ -194,7 +201,13 @@
             </label>
           </div>
         </form>
-        <button on:click|once={sumbit}>Finish</button>
+        <br />
+        <button
+          class="p-2 rounded-xl w-full text-center bg-red-500 text-white
+          hover:bg-red-700"
+          on:click|once={sumbit}>
+          Finish
+        </button>
       {/if}
     </div>
   </div>

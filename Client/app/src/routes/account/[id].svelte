@@ -1,8 +1,8 @@
 <script>
-  import { page } from '$app/stores';
+  import { page } from '$app/stores'
   console.log($page.params)
 </script>
-<main>
-	<p>{$page.params}</p>
-</main>
 
+<main>
+  <p>{$page.params}</p>
+</main>
