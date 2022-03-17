@@ -213,7 +213,7 @@ Yummy sh tbh best lang in the world dk why the js won sh the real goat
 <strong>Goal: </strong> Data processing
 <br>
 <strong>Description: </strong>
-Refined the question recognition code to work with math questions better. 
+Refined the question recognition code to work with math questions better.
 
 <hr>
 
@@ -252,7 +252,7 @@ ok now that boiler plate is there il work on making a clickable demo to appease 
 <strong>Goal: </strong> Data processing
 <br>
 <strong>Description: </strong>
-Refactored the code to make adding of edge cases easier. Also added some more edge cases. 
+Refactored the code to make adding of edge cases easier. Also added some more edge cases.
 
 <hr>
 
@@ -265,8 +265,7 @@ Refactored the code to make adding of edge cases easier. Also added some more ed
 <strong>Goal: </strong> Getting ready for data
 <br>
 <strong>Description: </strong>
-Made some stuff so its pretty much 1 click upload 
-
+Made some stuff so its pretty much 1 click upload
 
 <hr>
 
@@ -276,8 +275,20 @@ Made some stuff so its pretty much 1 click upload
 <br>
 <strong>Date: </strong> <em>13.3.22</em>
 <br>
-<strong>Goal: </strong> Front end 
+<strong>Goal: </strong> Front end
 <br>
 <strong>Description: </strong>
 Made leaderboard discord and game portal, still need to set up firebase stuff
 
+<hr>
+
+<strong>Name: </strong> Stephen
+<br>
+<strong>Time: </strong> <em>18:10 - 19:30</em>
+<br>
+<strong>Date: </strong> <em>15.3.22</em>
+<br>
+<strong>Goal: </strong> Finish Game Front End
+<br>
+<strong>Description: </strong>
+All the front end and pretty stff is done for game almost done for subjects but very efficient work while cutting hair

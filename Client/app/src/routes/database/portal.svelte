@@ -21,6 +21,7 @@
   }
 </style>
 
+
 <svelte:head>
   <title>Portal</title>
 </svelte:head>
@@ -30,7 +31,7 @@
       <img src={leaderboard} class="img drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />
-    <h1 class="text-white text-2xl">LeaderBoard</h1>
+    <h1 class="text-white text-2xl">Sort By Topic</h1>
   </div>
   <div class="flex items flex-col text-center">
     <a class="link" sveltekit:prefetch href="/game/game">

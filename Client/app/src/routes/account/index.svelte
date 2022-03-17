@@ -13,10 +13,10 @@
   let geo: boolean = false
   let history: boolean = false
   let psychology: boolean = false
-  let leaderboard: boolean = false
-  let shareAnswers: boolean = false
-  let leaderAnon: boolean = false
-  let pml: boolean = false
+  let leaderboard: boolean = true
+  let shareAnswers: boolean = true
+  let leaderAnon: boolean = true
+  let pml: boolean = true
 
   function next() {
     page++
@@ -93,7 +93,7 @@
   }
 
   input[type='checkbox']:checked {
-    background-color: rgb(0, 255, 174);
+    background-color: #a3fd88;
   }
 </style>
 
