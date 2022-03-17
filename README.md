@@ -16,3 +16,5 @@ Firestore as a relation db is not as good as something like postgres but I don't
 Sveltekit has nice SSO and i love svelte 
 
 Python becuase it supports AI libs and Josh likes it
+
+testing if my git is fucked or not
