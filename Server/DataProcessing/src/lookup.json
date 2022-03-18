@@ -47,17 +47,149 @@
         "system": 0.5,
         "equations": 0.2,
         "plane": 0.2,
-        "intersection": 0.6, 
+        "intersection": 0.6,
       }
     },
     "func": {
-      "funcprop": {
-        "function": 0.3,
+      "propfunc": {
+        "function": 0.5,
         "minimum": 0.3,
         "maximum": 0.3,
         "range": 0.4,
         "domain": 0.4,
-        "coordinates": 0.2
+        "coordinates": 0.2,
+        "equation": 0.1,
+        "f(x)": 0.5,
+        "g(x)": 0.5,
+        "sketch": 0.6
+      },
+      "trans": {
+        "transform": 0.7,
+        "translate": 0.8,
+        "translation": 0.8,
+        "stretch": 0.6,
+        "reflect": 0.6
+      },
+      "quad": {
+        "quadratic": 1,
+        "y-intercept": 0.4,
+        "x-intercept": 0.4
+      },
+      "poly": {
+        "remainder": 0.3,
+        "divide": 0.3
+      },
+      "ratfunc": {
+        "remainder": 0.3,
+        "divide": 0.3,
+        "rational": 0.8,
+      },
+      "modine": {
+        "least": 0.8,
+        "most": 0.8,
+        "inequality": 1,
+        ">": 0.3,
+        "<": 0.3
+      },
+      "explogfunc": {
+        "log": 1,
+        "ln": 1
+      }
+    },
+    "geo&trig": {
+      "geo&shape": {
+        "circle": 0.9,
+        "radius": 1,
+        "length": 0.7,
+        "perimeter": 1,
+        "area": 0.2,
+        "volume": 0.6,
+        "triangle": 1,
+        "triangular": 1,
+        "sphere": 1,
+        "spherical": 1,
+        "height": 0.7,
+        "arc": 1,
+        "region": 0.6,
+        "equilateral": 1,
+        "isosceles": 1,
+        "angle": 0.6,
+        "sector": 1,
+        "chord": 1
+      },
+      "trig": {
+        "sin": 0.6,
+        "cos": 0.6,
+        "tan": 0.6,
+        "csc": 0.6,
+        "sec": 0.6,
+        "cot": 0.6,
+        "period": 0.8,
+        "amplitude": 0.8,
+        "phase", 0.7
+      },
+      "vec": {
+        "vector": 1,
+        "direction": 0.3,
+        "perpendicular": 0.3
+      }
+    },
+    "stat&prob": {
+      "stat": {
+        "mean": 1,
+        "median": 1,
+        "mode": 1,
+        "cumulative": 0.6,
+        "frequency": 0.4,
+        "interquartile range": 1,
+        "box-and-whisker": 1,
+        "stem and leaf": 1,
+        "data set": 1
+      },
+      "bivar": {
+        "regression": 1,
+        "correlation": 0.5,
+        "coefficient": 0.1,
+        "gradient": 0.2,
+      },
+      "prob": {
+        "probability": 1,
+        "probabilities": 1,
+        "venn": 1,
+        "independant": 0.6,
+        "P(": 0.2,
+        "event": 0.4,
+        "marble": 0.4,
+        "fair": 0.3,
+        "replacement": 0.3,
+        "replace": 0.3,
+        "win": 0.3,
+        "lose": 0.3
+      },
+      "dist": {
+        "distribute": 0.5,
+        "distribution": 0.5,
+        "normal": 0.4,
+        "expected": 0.3,
+        "standard deviation": 0.3,
+        "variance": 0.3,
+      }
+    },
+    "calc": {
+      "diffcalc": {
+        "tangent": 0.3, 
+      },
+      "diffeq": {
+
+      },
+      "int": {
+
+      },
+      "macl": {
+
+      },
+      "kinem": {
+
       }
     }
   },
