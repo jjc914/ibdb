@@ -32,7 +32,7 @@
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <div class="flex flex-col backpeepee p-5 m-8 rounded-3xl drop-shadow-2xl">
+  <div class="flex flex-col border-2  backpeepee p-5 m-8 rounded-3xl drop-shadow-2xl">
     <h1 class="text-2xl float-left">Question:</h1>
     <br />
     <img src={test} alt="question" class="rounded-xl" />
