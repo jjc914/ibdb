@@ -2,15 +2,52 @@
   "math": {
     "num&alg": {
       "seq&ser": {
-        "geometric": 0.2,
+        "geometric": 0.3,
         "arithmatic": 0.4,
         "sequence": 0.8,
         "common ratio": 0.9,
-        "common difference": 0.9
+        "common difference": 0.9,
+        "subsequent": 0.1,
+        "term": 0.1,
+        "sum": 0.1
       },
       "exp&log": {
-        "log": 0.8,
-        "ln": 0.8
+        "log": 1,
+        "ln": 1
+      },
+      "binom": {
+        "expand": 0.4,
+        "expansion": 0.4,
+        "coefficient": 0.2,
+        "binomial": 1
+      },
+      "count": {
+        "number": 0.1,
+        "consisting": 0.4,
+        "possible": 0.4,
+        "ways": 0.3
+      },
+      "cmplx": {
+        "complex": 1,
+        "root": 0.2,
+        "conjugate": 1,
+        "cartesian": 1,
+        "polar": 1,
+        "modulus": 0.7,
+        "argument:": 0.3,
+        "argand": 1,
+        "moivre": 1
+      },
+      "proofs": {
+        "prove": 1,
+        "induction": 1,
+        "contradiction": 1
+      },
+      "syslin": {
+        "system": 0.5,
+        "equations": 0.2,
+        "plane": 0.2,
+        "intersection": 0.6, 
       }
     },
     "func": {
