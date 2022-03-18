@@ -292,3 +292,17 @@ Made leaderboard discord and game portal, still need to set up firebase stuff
 <br>
 <strong>Description: </strong>
 All the front end and pretty stff is done for game almost done for subjects but very efficient work while cutting hair
+
+<hr>
+
+<strong>Name: </strong> Stephen
+<br>
+<strong>Time: </strong> <em>20:10 - 22:30</em>
+<br>
+<strong>Date: </strong> <em>17.3.22</em>
+<br>
+<strong>Goal: </strong> Finish DB Front End
+<br>
+<strong>Description: </strong>
+All the db front end - firebase stuff that will be for tmr. Also the time is not really accurate I spent around 2 hrs on it maybe more maybe less only the man above our lord and saviour Apple Springbottom can tell. Yet maybe he can't even tell the only way we will know is if we open up brain. But still it would be subject to schema bias so we will never know. Information just lost away how sad. but not really it wasn't very useful information. Anyways I have been putting off using the firebase sdk because it was hell last time I did cuz its built for like ecma5. I will do tmr after english test. Here is my fortune quote from CLI and also my commit message "When some people discover the truth, they just can't understand why
+everybody isn't eager to hear it."
