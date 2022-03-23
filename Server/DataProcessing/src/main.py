@@ -10,7 +10,6 @@ import numpy as np
 from PIL import Image
 
 import fitz
-import pytesseract
 
 from logger import Logger
 from logger import Color
@@ -227,6 +226,8 @@ def classify(json, textData):
 
         subsectionWeights = {}
         subsubsectionWeights = {}
+        if (subject == Subject.NONE):
+            continue
         for text in data:
             for subsection, subsubsections in json[subject.value].items():
                 for subsubsection, subsubsections in subsubsections.items():

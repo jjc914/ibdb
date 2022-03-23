@@ -47,7 +47,7 @@
         "system": 0.5,
         "equations": 0.2,
         "plane": 0.2,
-        "intersection": 0.6,
+        "intersection": 0.6
       }
     },
     "func": {
@@ -82,7 +82,7 @@
       "ratfunc": {
         "remainder": 0.3,
         "divide": 0.3,
-        "rational": 0.8,
+        "rational": 0.8
       },
       "modine": {
         "least": 0.8,
@@ -126,7 +126,7 @@
         "cot": 0.6,
         "period": 0.8,
         "amplitude": 0.8,
-        "phase", 0.7
+        "phase": 0.7
       },
       "vec": {
         "vector": 1,
@@ -150,7 +150,7 @@
         "regression": 1,
         "correlation": 0.5,
         "coefficient": 0.1,
-        "gradient": 0.2,
+        "gradient": 0.2
       },
       "prob": {
         "probability": 1,
@@ -172,12 +172,12 @@
         "normal": 0.4,
         "expected": 0.3,
         "standard deviation": 0.3,
-        "variance": 0.3,
+        "variance": 0.3
       }
     },
     "calc": {
       "diffcalc": {
-        "tangent": 0.3, 
+        "tangent": 0.3
       },
       "diffeq": {
 
