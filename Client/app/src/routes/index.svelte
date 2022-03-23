@@ -47,7 +47,11 @@
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <button class="signout" on:click={() => signOut()}>Sign Out</button>
+  <button
+    class="signout shadow-lg duration-750 ease-in-out transition hover:scale-110"
+    on:click={() => signOut()}>
+    Sign Out
+  </button>
 
   <button on:click={() => signIn()}>
     <div
@@ -58,7 +62,7 @@
         src="https://img.icons8.com/fluency-systems-filled/96/000000/google-logo.png"
         alt="google icon" />
       <!-- <a class="link" sveltekit:prefetch href="/login"> -->
-      <p class="justify-center content-center p-8 text-xl">
+      <p class="justify-center content-center p-8 text-xl ">
         Sign into google here
       </p>
     </div>

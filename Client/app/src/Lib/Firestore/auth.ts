@@ -1,4 +1,3 @@
-import { app } from '$lib/Firestore/firestoreSetup'
 import { getAuth, signInWithRedirect, GoogleAuthProvider } from 'firebase/auth'
 import { saveUser, getUser } from './db'
 const provider = new GoogleAuthProvider()
@@ -9,15 +8,6 @@ export const signIn = () => {
 export const signOut = () => {
   return auth.signOut()
 }
-
-// export function signIn () {
-//   await signInWithRedirect(auth, provider);
-//   auth.onAuthStateChanged(user => {
-//     if (user) {
-//       console.log(user)
-//     }
-//   }, err => {
-//     console.log(err)
-//   }
-
-// };
+export const onAuthStateChanged = (callback: (user: any) => void) => {
+  return auth.onAuthStateChanged(callback)
+}

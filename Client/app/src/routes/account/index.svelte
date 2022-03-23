@@ -50,6 +50,16 @@
     )
   }
   function sumbit() {
+    console.log(
+      'leaderboard: ' +
+        leaderboard +
+        '\nshareAnswers: ' +
+        shareAnswers +
+        '\nleaderAnon: ' +
+        leaderAnon +
+        '\npml: ' +
+        pml,
+    )
     window.open('http://localhost:3000/home')
   }
 </script>
@@ -94,7 +104,7 @@
 
   input[type='checkbox']:checked {
     background-color: #fd8c88;
-    border: 0.15em solid #fd8c88;
+    border: 0.15em solid #000000;
   }
 </style>
 
