@@ -307,7 +307,6 @@ All the front end and pretty stff is done for game almost done for subjects but 
 All the db front end - firebase stuff that will be for tmr. Also the time is not really accurate I spent around 2 hrs on it maybe more maybe less only the man above our lord and saviour Apple Springbottom can tell. Yet maybe he can't even tell the only way we will know is if we open up brain. But still it would be subject to schema bias so we will never know. Information just lost away how sad. but not really it wasn't very useful information. Anyways I have been putting off using the firebase sdk because it was hell last time I did cuz its built for like ecma5. I will do tmr after english test. Here is my fortune quote from CLI and also my commit message "When some people discover the truth, they just can't understand why
 everybody isn't eager to hear it."
 
-
 <hr>
 
 <strong>Name: </strong> Stephen
@@ -319,12 +318,11 @@ everybody isn't eager to hear it."
 <strong>Goal: </strong> Finish DB Front End
 <br>
 <strong>Description: </strong>
-Doing front end touchups lookup tables for weights and shit then started on firebase shit. 
+Doing front end touchups lookup tables for weights and shit then started on firebase shit.
 A lot of weird shit with python and brew and apple but ce la vie
-< it is burning and falling but its ok >
- --------------------------------------
-   \
-    \
+
+```
+      To the reader :
       _____   _________
      /     \_/         |
     |                 ||
@@ -341,3 +339,11 @@ A lot of weird shit with python and brew and apple but ce la vie
         | |    | |
         ***    ***
        /___\  /___\
+      this      is a
+     piece of toast I
+      sorry you have
+       have to read
+          through
+           these
+             W
+```
