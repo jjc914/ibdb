@@ -1,17 +1,15 @@
 <script lang="ts">
   import { app } from '../Lib/Firestore/firestoreSetup'
   import firebase from 'firebase/app'
-  import {
-    getAuth,
-    signInWithRedirect,
-    GoogleAuthProvider,
-  } from 'firebase/auth'
+  import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 
+  import { saveUser } from '../Lib/Firestore/db'
   const provider = new GoogleAuthProvider()
   const auth = getAuth()
   function signIn() {
-    // signInWithRedirect(auth, provider)
-    window.open('http://localhost:3000/account')
+    signInWithPopup(auth, provider).then((result) => {
+      console.log(result)
+    })
   }
 
   function signOut() {

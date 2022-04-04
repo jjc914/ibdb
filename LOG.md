@@ -347,3 +347,16 @@ A lot of weird shit with python and brew and apple but ce la vie
            these
              W
 ```
+
+<hr>
+
+<strong>Name: </strong> Stephen
+<br>
+<strong>Time: </strong> <em>22:00 - 22:52</em>
+<br>
+<strong>Date: </strong> <em>4.4.22</em>
+<br>
+<strong>Goal: </strong> Begin firebase integration and mockup lookup table
+<br>
+<strong>Description: </strong>
+Started firebase things and setting up some common use functions. Also wrote the outile for all the files

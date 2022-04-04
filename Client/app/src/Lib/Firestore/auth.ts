@@ -1,5 +1,4 @@
 import { getAuth, signInWithRedirect, GoogleAuthProvider } from 'firebase/auth'
-import { saveUser, getUser } from './db'
 const provider = new GoogleAuthProvider()
 const auth = getAuth()
 export const signIn = () => {
