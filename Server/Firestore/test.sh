@@ -14,9 +14,8 @@ ADD = $(ipfs add -r $dir)
 # Read the files in the directory
 for file in $dir/*
     do
-        echo $file is adding
-        # Add the file to the IPFS network
-        ipfs add -r $file >> $path.txt
+        echo $file is adding 
+        ipfs add -r $file >> $path.txt 
         echo $file added
 done
 

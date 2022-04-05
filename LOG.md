@@ -360,3 +360,27 @@ A lot of weird shit with python and brew and apple but ce la vie
 <br>
 <strong>Description: </strong>
 Started firebase things and setting up some common use functions. Also wrote the outile for all the files
+
+<hr>
+
+<strong>Name: </strong> Stephen
+<br>
+<strong>Time: </strong> <em>17:00 - 17:30</em>
+<br>
+<strong>Date: </strong> <em>5.4.22</em>
+<br>
+<strong>Goal: </strong> python parsing for procedural updating
+<br>
+<strong>Description: </strong>
+I am pretty bad at coding, i will get better later. What a word later such meaningless. Anyways here is cow
+
+```
+ _______
+< mooooo >
+ -------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```

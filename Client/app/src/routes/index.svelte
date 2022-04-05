@@ -3,8 +3,7 @@
   import firebase from 'firebase/app'
   import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 
-  import { saveUser } from '../Lib/Firestore/db'
-  const provider = new GoogleAuthProvider()
+  import { saveUser } from '../Lib../Lib/Firestore/usernst provider = new GoogleAuthProvider()
   const auth = getAuth()
   function signIn() {
     signInWithPopup(auth, provider).then((result) => {
