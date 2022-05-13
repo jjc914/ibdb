@@ -1,7 +1,13 @@
 <script>
-  import leaderboard from '../../SVG/LeaderBoard.svg'
-  import discord from '../../SVG/discord.svg'
-  import game from '../../SVG/game.svg'
+  import leaderboard from '../../lib/SVG/LeaderBoard.svg'
+  import discord from '../../lib/SVG/discord.svg'
+  import game from '../../lib/SVG/game.svg'
+  import { user, isLoggedIn } from '../../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
 </script>
 
 <style>

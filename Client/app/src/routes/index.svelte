@@ -2,13 +2,20 @@
   import { app } from '../Lib/Firestore/firestoreSetup'
   import firebase from 'firebase/app'
   import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
-
-  import { saveUser } from '../Lib../Lib/Firestore/usernst provider = new GoogleAuthProvider()
+  import { user, isLoggedIn } from '../stores/authStore'
+  // import { saveUser } from '../Lib../Lib/Firestore/usernst'
+  const provider = new GoogleAuthProvider()
   const auth = getAuth()
   function signIn() {
-    signInWithPopup(auth, provider).then((result) => {
-      console.log(result)
-    })
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        $user = result.user
+        $isLoggedIn = true
+        //save user
+      })
+      .catch((error) => {
+        console.error(error)
+      })
   }
 
   function signOut() {

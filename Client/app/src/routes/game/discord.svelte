@@ -1,5 +1,11 @@
 <script type="ts">
-  import discord from '../../SVG/discord.svg'
+  import discord from '../../Lib/SVG/discord.svg'
+  import { user, isLoggedIn } from '../../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
 </script>
 
 <style>
