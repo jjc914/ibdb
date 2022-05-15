@@ -76,7 +76,7 @@ def main():
                 if not os.path.isdir(f'{directory}out/{fileName[:-4]}/'):
                     os.mkdir(f'{directory}out/{fileName[:-4]}/')
                 textData = extractQuestions(f'{directory}{fileName}', f'{directory}out/{fileName[:-4]}/', document)
-                classify(classificationJson, textData)
+                classify(classificationJson, directory, textData)
 
     except ArgNotADirectoryError:
         Logger.log(0, '[ERROR] No such directory: enter a valid directory to scan', Color.FAIL)
@@ -212,7 +212,8 @@ def extractQuestions(inPath, outPath, document):
                     textElements.clear()
     return textData
 
-def classify(json, textData):
+def classify(json, outDir, textData):
+    number = 0
     for file, data in textData.items():
         origin = file.split('/')[-2]
         subject = Subject.NONE
@@ -220,13 +221,13 @@ def classify(json, textData):
         if 'math' in origin.lower():
             subject = Subject.MATH
             if 'hl' in origin.lower():
-                level = Level.HL
+                level = Level.
             elif 'sl' in origin.lower():
                 level = Level.SL
 
         subsectionWeights = {}
         subsubsectionWeights = {}
-        if (subject == Subject.NONE):
+        if (subject == Subject.NONE
             continue
         for text in data:
             for subsection, subsubsections in json[subject.value].items():
@@ -243,9 +244,12 @@ def classify(json, textData):
                         #     subsubsectionWeights[subsubsection] += 1
                         # else:
                         #     subsubsectionWeights[subsubsection] = 1
-        # print(file)
-        # print(subsectionWeights)
-        # print(subsubsectionWeights)
+        print(file)
+        section = sorted(subsectionWeights.items(), key=lambda x: x[1], reverse=True)[0]
+        if not os.path.exists(f'{outDir}/{section[0]}'):
+            os.mkdir(f'{outDir}/{section[0]}')
+        os.rename(file, f'{outDir}/{section[0]}/question {number}')
+        number += 1
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]

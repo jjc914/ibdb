@@ -49,9 +49,7 @@
         psychology,
     )
   }
-  function sumbit() {
-    window.open('http://localhost:3000/home')
-  }
+  
 </script>
 
 <style>
@@ -70,7 +68,7 @@
     margin: auto;
   }
   a {
-    background-color: #0f92c6;
+    background-color: #707070;
     color: #f0f0f0;
     width: 20vw;
     height: 10vw;
@@ -96,44 +94,44 @@
       <div
         class=" w-full m-auto items-center flex text-center justify-center
         flex-wrap">
-        <a href="">
+        <a style="background-color: #0f92c6" href="/database/math">
           <p>Math AA</p>
         </a>
         <a href="">
-          <p>Math AI</p>
+          <p>Math AI (Coming Soon)</p>
         </a>
-        <a href="">
+        <a style="background-color: #0f92c6" href="/database/physics">
           <p>Physics</p>
         </a>
         <a href="">
-          <p>Chemistry</p>
+          <p>Chemistry (Coming Soon)</p>
         </a>
         <a href="">
-          <p>Biology</p>
+          <p>Biology (Coming Soon)</p>
         </a>
         <a href="">
-          <p>Computer Science</p>
+          <p>Computer Science (Coming Soon)</p>
         </a>
         <a href="">
-          <p>Economics</p>
+          <p>Economics (Coming Soon)</p>
         </a>
         <a href="">
-          <p>Geography</p>
+          <p>Geography (Coming Soon)</p>
         </a>
         <a href="">
-          <p>History</p>
+          <p>History (Coming Soon)</p>
         </a>
         <a href="">
-          <p>Psychology</p>
+          <p>Psychology (Coming Soon)</p>
         </a>
         <a href="">
-          <p>English Lang Lit</p>
+          <p>English Lang Lit (Coming Soon)</p>
         </a>
         <a href="">
-          <p>English Lit</p>
+          <p>English Lit (Coming Soon)</p>
         </a>
         <a href="">
-          <p>Chinese BA</p>
+          <p>Chinese B (Coming Soon)</p>
         </a>
       </div>
 

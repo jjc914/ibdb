@@ -3,8 +3,6 @@
   import game from '../Lib/SVG/game.svg'
   import { user, isLoggedIn } from '../stores/authStore'
   
-  console.log($isLoggedIn)
-  console.log($user)
 </script>
 
 <style>
