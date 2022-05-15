@@ -1,7 +1,13 @@
 <script>
-  import leaderboard from '../../SVG/LeaderBoard.svg'
-  import discord from '../../SVG/discord.svg'
-  import game from '../../SVG/game.svg'
+  import leaderboard from '../../Lib/SVG/LeaderBoard.svg'
+  import discord from '../../Lib/SVG/discord.svg'
+  import game from '../../Lib/SVG/game.svg'
+  import { user, isLoggedIn } from '../../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
 </script>
 
 <style>
@@ -25,21 +31,21 @@
   <title>Portal</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <div class="flex items flex-col text-center">
+  <div class="flex items flex-col text-center duration-750 ease-in-out transition hover:scale-90">
     <a class="link" sveltekit:prefetch href="/game/leaderboard">
       <img src={leaderboard} class="img drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />
     <h1 class="text-white text-2xl">LeaderBoard</h1>
   </div>
-  <div class="flex items flex-col text-center">
+  <div class="flex items flex-col text-center duration-750 ease-in-out transition hover:scale-90">
     <a class="link" sveltekit:prefetch href="/game/game">
       <img src={game} class="img drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />
     <h1 class="text-white text-2xl">Game</h1>
   </div>
-  <div class="flex items flex-col text-center">
+  <div class="flex items flex-col text-center duration-750 ease-in-out transition hover:scale-90">
     <a class="link" sveltekit:prefetch href="/game/discord">
       <img src={discord} class="img drop-shadow-2xl flex" alt="logo" />
     </a>

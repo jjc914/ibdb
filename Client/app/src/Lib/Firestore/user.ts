@@ -4,10 +4,11 @@ import { ref, set } from 'firebase/database'
 export const registerUser = async (userId: string) => {
   //save to realtime database
   set(ref(rtdb, 'users/' + userId), {
-    id: userId,
+    id: '',
     name: '',
     email: '',
     photoURL: '',
+    points: '',
     createdAt: new Date().toISOString(),
   })
 }

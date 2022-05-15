@@ -1,47 +1,46 @@
 <script lang="ts">
   import '../app.css'
-  import { page } from '$app/stores'
-  import logo from '../SVG/database.svg'
+  import logo from '../Lib/SVG/database.svg'
+  import { user, isLoggedIn } from '../stores/authStore'
+
+  function signOut() {
+    user.update(n => null)
+    isLoggedIn.update(n => false)
+    window.location.href = "/"
+  }
 </script>
 
 <style>
-  ul {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 3em;
-    display: flex;
-    list-style: none;
-    border-radius: 0.5rem;
-    padding: 2vw;
-    margin-right: 3vw;
-  }
-  li {
-    list-style: none;
-  }
   .logo {
     position: absolute;
+    padding: 1rem;
+    padding-left: 2rem;
+    width: 10vw;
+  }
+  
+  .signout {
+    background-color: #fffaaf;
+    color: #272727;
+    position: absolute;
+    right: 0;
+    z-index: 1;
     top: 0;
-    width: 3rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-  .link {
-    bottom: 0;
-    height: 100%;
-    align-items: center;
-    padding: 0 1em;
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    transition: color 0.2s linear;
-    background-color: transparent;
-  }
-  * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition-duration: 1000ms;
   }
 </style>
 
+<a href="/home">
+<img src="{logo}" class="logo duration-750 ease-in-out transition hover:scale-110" alt="logo"><img>
+</a>
+<button
+class="signout shadow-lg duration-750 ease-in-out transition hover:scale-110"
+on:click={() => signOut()}>
+Sign Out
+</button>
 <slot />

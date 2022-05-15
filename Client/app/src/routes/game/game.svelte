@@ -1,5 +1,11 @@
 <script lang="ts">
-  import test from '../../SVG/test.png'
+  import test from '../../Lib/SVG/test.png'
+  import { user, isLoggedIn } from '../../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
 </script>
 
 <style>

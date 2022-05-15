@@ -7,6 +7,12 @@
     const data = snapshot.val()
     console.log(data)
   })
+  import { user, isLoggedIn } from '../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
 </script>
 
 <h1>TEST</h1>

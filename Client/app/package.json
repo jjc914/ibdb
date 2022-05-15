@@ -11,23 +11,25 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^5.10.1",
-    "@typescript-eslint/parser": "^5.10.1",
-    "autoprefixer": "^10.4.2",
-    "eslint": "^7.32.0",
-    "eslint-plugin-svelte3": "^3.2.1",
-    "postcss": "^8.4.6",
-    "svelte": "^3.44.0",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.9.4",
-    "tailwindcss": "^3.0.22",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "@sveltejs/adapter-auto": "1.0.0-next.40",
+    "@sveltejs/kit": "1.0.0-next.328",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.15.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.13",
+    "svelte": "^3.48.0",
+    "svelte-check": "^2.7.0",
+    "svelte-preprocess": "^4.10.6",
+    "tailwindcss": "^3.0.24",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
   },
   "type": "module",
   "dependencies": {
-    "firebase": "^9.6.6"
+    "cookie": "^0.5.0",
+    "firebase": "^9.8.1",
+    "svelte-loading-spinners": "^0.1.7"
   }
 }
