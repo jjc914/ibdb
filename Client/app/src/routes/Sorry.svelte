@@ -1,11 +1,5 @@
 <script>
   import { user, isLoggedIn } from '../stores/authStore'
-  if (typeof window !== 'undefined') {
-    if ($isLoggedIn === false) {
-      window.location.replace('/')
-    }
-  }
-
   // i know this is shit way of doing it but doing it in layout was hurting my soul and making a recursive loop so fuck you
 </script>
 
@@ -15,7 +9,7 @@
   }
   .blober {
     background: #ff7979;
-    width: 30vw;
+    width: 50vw;
     color: #f0f0f0;
     padding: 3rem;
   }
@@ -45,11 +39,14 @@
     </h1>
     <br />
     <div class="text-center">
-      <button
+     <a href="mailto:sdo244@student.cis.edu.hk">
+     <div
         class="bg-white hover:bg-slate-100 text-xl text-white py-2 px-4
         rounded-xl buttons">
         Email Us
-      </button>
+    </div>
+    
+    </a>
     </div>
   </div>
 </div>

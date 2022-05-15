@@ -3,24 +3,33 @@
   import firebase from 'firebase/app'
   import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
   import { user, isLoggedIn } from '../stores/authStore'
+  import {SyncLoader } from "svelte-loading-spinners"
   // import { saveUser } from '../Lib../Lib/Firestore/usernst'
   const provider = new GoogleAuthProvider()
   const auth = getAuth()
-  function signIn() {
+  console.log($isLoggedIn)
+  var loading :boolean = false
+   function signIn() {
+    loading = true
     signInWithPopup(auth, provider)
       .then((result) => {
-        $user = result.user
-        $isLoggedIn = true
-        //save user
+        //console.log(result.user)
+        user.set(result.user)
+        isLoggedIn.set(true)
+        console.log($isLoggedIn)
+        console.log($user.email)
+        if($user.email.includes(".edu"))
+          window.location.href = "/home"
+        else
+          window.location.href = '/Sorry'
+        //sign user into db
       })
       .catch((error) => {
+        console.log('Someting wrong')
         console.error(error)
       })
   }
 
-  function signOut() {
-    auth.signOut()
-  }
 </script>
 
 <style>
@@ -30,34 +39,15 @@
   .backpeepee {
     background-color: #ffffff;
   }
-  .signout {
-    background-color: #fffaaf;
-    color: #272727;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    top: 0;
-    margin: 1.2rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 600;
-    transition-duration: 1000ms;
-  }
+  
 </style>
 
 <svelte:head>
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <button
-    class="signout shadow-lg duration-750 ease-in-out transition hover:scale-110"
-    on:click={() => signOut()}>
-    Sign Out
-  </button>
-
-  <button on:click={() => signIn()}>
+    {#if loading = true}
+    <button on:click={() => signIn()}>
     <div
       class="flex backpeepee p-3 rounded-3xl shadow-lg border-2 hover:border-4
       shadow-lg duration-750 ease-in-out transition hover:scale-105
@@ -69,7 +59,12 @@
       <p class="justify-center content-center p-8 text-xl ">
         Sign into google here
       </p>
+    
     </div>
   </button>
+  {/if}
   <!-- </a> -->
+  {#if loading = false} 
+  <SyncLoader  size="10" color="white" unit="vw"></SyncLoader>
+  {/if}
 </div>

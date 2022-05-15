@@ -28,6 +28,8 @@
   },
   "type": "module",
   "dependencies": {
-    "firebase": "^9.8.1"
+    "cookie": "^0.5.0",
+    "firebase": "^9.8.1",
+    "svelte-loading-spinners": "^0.1.7"
   }
 }

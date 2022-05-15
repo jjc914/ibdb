@@ -1,5 +1,5 @@
 <script lang="ts">
-  import test from '../../lib/SVG/test.png'
+  import test from '../../Lib/SVG/test.png'
   import { user, isLoggedIn } from '../../stores/authStore'
   if (typeof window !== 'undefined') {
     if ($isLoggedIn === false) {

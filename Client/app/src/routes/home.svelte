@@ -1,12 +1,10 @@
 <script lang="ts">
-  import logo from '../lib/SVG/database.svg'
-  import game from '../lib/SVG/game.svg'
+  import logo from '../Lib/SVG/database.svg'
+  import game from '../Lib/SVG/game.svg'
   import { user, isLoggedIn } from '../stores/authStore'
-  if (typeof window !== 'undefined') {
-    if ($isLoggedIn === false) {
-      window.location.replace('/')
-    }
-  }
+  
+  console.log($isLoggedIn)
+  console.log($user)
 </script>
 
 <style>
@@ -38,18 +36,22 @@
   <title>home</title>
 </svelte:head>
 <div class="back flex justify-center items-center m-auto">
-  <div class="flex one flex-col text-center">
+  <div class="flex one flex-col text-center ">
+    <div class="hadow-lg duration-750 ease-in-out transition hover:scale-90">
     <a class="link" sveltekit:prefetch href="/database">
       <img src={logo} class="logo drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />
     <h1 class="text-white text-2xl">Database</h1>
+    </div>
   </div>
   <div class="flex two flex-col text-center">
+    <div class="hadow-lg duration-750 ease-in-out transition hover:scale-90">
     <a class="link" sveltekit:prefetch href="/game">
       <img src={game} class="logo drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />
     <h1 class="text-white text-2xl">Game</h1>
+    </div>
   </div>
 </div>

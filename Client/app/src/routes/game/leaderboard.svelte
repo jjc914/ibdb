@@ -12,7 +12,7 @@
     background-color: #272727;
   }
   .backpeepee {
-    background-color: #ffffff;
+    background-color: #4d4d4d;
   }
 </style>
 
@@ -77,30 +77,6 @@
               69%
             </td>
 
-          </tr>
-          <tr
-            class="bg-white border-b transition duration-300 ease-in-out
-            hover:bg-gray-100">
-            <td
-              class="px-6 py-4 whitespace-nowrap text-sm font-medium
-              text-gray-900">
-              2
-            </td>
-            <td
-              class="text-sm text-gray-900 font-light px-6 py-4
-              whitespace-nowrap">
-              TheArctesian
-            </td>
-            <td
-              class="text-sm text-gray-900 font-light px-6 py-4
-              whitespace-nowrap">
-              69
-            </td>
-            <td
-              class="text-sm text-gray-900 font-light px-6 py-4
-              whitespace-nowrap">
-              69%
-            </td>
           </tr>
         </tbody>
       </table>
