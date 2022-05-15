@@ -221,13 +221,19 @@ def classify(json, outDir, textData):
         if 'math' in origin.lower():
             subject = Subject.MATH
             if 'hl' in origin.lower():
-                level = Level.
+                level = Level.HL
+            elif 'sl' in origin.lower():
+                level = Level.SL
+        if 'phys' in origin.lower():
+            subject = Subject.PHYS
+            if 'hl' in origin.lower():
+                level = Level.HL
             elif 'sl' in origin.lower():
                 level = Level.SL
 
         subsectionWeights = {}
         subsubsectionWeights = {}
-        if (subject == Subject.NONE
+        if (subject == Subject.NONE):
             continue
         for text in data:
             for subsection, subsubsections in json[subject.value].items():
@@ -245,10 +251,17 @@ def classify(json, outDir, textData):
                         # else:
                         #     subsubsectionWeights[subsubsection] = 1
         print(file)
-        section = sorted(subsectionWeights.items(), key=lambda x: x[1], reverse=True)[0]
-        if not os.path.exists(f'{outDir}/{section[0]}'):
-            os.mkdir(f'{outDir}/{section[0]}')
-        os.rename(file, f'{outDir}/{section[0]}/question {number}')
+        sortedWeights = sorted(subsectionWeights.items(), key=lambda x: x[1], reverse=True)
+        section = None
+        if len(sortedWeights) <= 0:
+            section = ("none", 0)
+        else:
+            section = sortedWeights[0]
+        if not os.path.exists(f'{outDir}out/{subject.value}'):
+            os.mkdir(f'{outDir}out/{subject.value}')
+        if not os.path.exists(f'{outDir}out/{subject.value}/{section[0]}'):
+            os.mkdir(f'{outDir}out/{subject.value}/{section[0]}')
+        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/question{number}.png')
         number += 1
 
 def getFileExtension(fileName):

@@ -296,16 +296,29 @@
     "atomicPhysics": {
       "atomic": 1,
       "atom": 0.5,
-      "matter": 0.5
+      "matter": 0.5,
+      "radioactive": 0.5,
+      "decay": 0.4
     },
     "circularMotion": {
       "centripetal": 0.7,
-      "2π": 0.7
+      "2π": 0.7,
+      "escape velocity": 1.0,
+      "diameter": 0.2,
+      "orbit": 1.0
     },
     "electricityAndmagnetism": {
       "cells": 0.5,
       "magnetic": 0.5,
-      "fields": 0.5
+      "fields": 0.5,
+      "coil": 0.2,
+      "flux": 0.6,
+      "capacitor": 0.6,
+      "series": 0.2, 
+      "battery": 0.4,
+      "charge": 0.3,
+      "current": 0.4,
+      "resistor": 0.7
     },
     "electromagneticInduction": {
       "induction": 1,
@@ -331,7 +344,14 @@
       "mechanics": 1,
       "momentum": 0.5,
       "kinematics": 0.5,
-      "impulse": 0.5
+      "impulse": 0.5,
+      "speed":0.3, 
+      "velocity": 0.2,
+      "acceleration": 0.2,
+      "distance": 0.2,
+      "coefficient of dynamic friction": 1.0,
+      "coefficient of static friction": 1.0,
+      "kinetic energy": 0.6
     },
     "quantumAndnuclearPhysics": {
       "quantum": 1,
@@ -345,11 +365,13 @@
     },
     "wavePhenomena": {
       "doppler": 0.5,
-      "SHM": 0.5,
+      "shm": 0.5,
+      "simple harmonic motion": 1.0,
       "wave": 0.3,
       "harmonic motion": 0.3,
       "sound": 0.6,
-      "diffraction": 0.6
+      "diffraction": 0.6,
+      "period": 0.4
     },
     "waves": {
       "wave": 1,
