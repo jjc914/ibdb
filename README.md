@@ -8,8 +8,6 @@ Backend: Firebase, Firestore, Firestore cloud functions (go)
 Frontend: Sveltekit
 Data Propagation: Python
 
-why
-
 Firestore as a relation db is not as good as something like postgres but I don't really care cause I don't want to go through the pain of creating a postgres db and ngnix and hosting and docker and pain
 
 Sveltekit has nice SSO and i love svelte

@@ -1,3 +1,14 @@
+<script>
+  import { user, isLoggedIn } from '../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
+
+  // i know this is shit way of doing it but doing it in layout was hurting my soul and making a recursive loop so fuck you
+</script>
+
 <style>
   .back {
     background-color: #272727;

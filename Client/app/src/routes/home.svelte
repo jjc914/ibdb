@@ -1,8 +1,12 @@
 <script lang="ts">
-  import logo from '../SVG/database.svg'
-  import game from '../SVG/game.svg'
-
-  import { page } from '$app/stores'
+  import logo from '../lib/SVG/database.svg'
+  import game from '../lib/SVG/game.svg'
+  import { user, isLoggedIn } from '../stores/authStore'
+  if (typeof window !== 'undefined') {
+    if ($isLoggedIn === false) {
+      window.location.replace('/')
+    }
+  }
 </script>
 
 <style>
