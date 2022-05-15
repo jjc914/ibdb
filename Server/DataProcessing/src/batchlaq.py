@@ -230,20 +230,22 @@ def classify(json, textData):
             continue
         for text in data:
             for subsection, subsubsections in json[subject.value].items():
-                for subsubsection, subsubsections in subsubsections.items():
-                    for word, weight in subsubsections.items():
-                        if word in text:
-                            if subsection in subsectionWeights:
-                                subsectionWeights[subsection] += 1
-                            else:
-                                subsectionWeights[subsection] = 1
-                            if subsubsection in subsubsectionWeights:
-                                subsubsectionWeights[subsubsection] += 1
-                            else:
-                                subsubsectionWeights[subsubsection] = 1
-        print(file)
-        print(subsectionWeights)
-        print(subsubsectionWeights)
+                # for subsubsection, subsubsections in subsubsections.items():
+                # print(subsection)
+                # print(subsubsections)
+                for word, weight in subsubsections.items():
+                    if word in text:
+                        if subsection in subsectionWeights:
+                            subsectionWeights[subsection] += 1
+                        else:
+                            subsectionWeights[subsection] = 1
+                        # if subsubsection in subsubsectionWeights:
+                        #     subsubsectionWeights[subsubsection] += 1
+                        # else:
+                        #     subsubsectionWeights[subsubsection] = 1
+        # print(file)
+        # print(subsectionWeights)
+        # print(subsubsectionWeights)
 
 def getFileExtension(fileName):
     return fileName.split('.')[len(fileName.split('.')) - 1]
