@@ -76,6 +76,7 @@ def main():
                 if not os.path.isdir(f'{directory}out/{fileName[:-4]}/'):
                     os.mkdir(f'{directory}out/{fileName[:-4]}/')
                 textData = extractQuestions(f'{directory}{fileName}', f'{directory}out/{fileName[:-4]}/', document)
+                print(directory)
                 classify(classificationJson, directory, textData)
 
     except ArgNotADirectoryError:
