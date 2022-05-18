@@ -44,7 +44,7 @@
 </style>
 
 <svelte:head>
-  <title>index</title>
+  <title>electricityAndmagnetism</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
   <div

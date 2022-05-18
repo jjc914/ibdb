@@ -1,5 +1,7 @@
 <script lang="ts">
     import { user, isLoggedIn } from '../../../stores/authStore'
+   import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons' 
+   import Carousel from '@beyonk/svelte-carousel'
     const questions : string[] = [ 
         "https://raw.githubusercontent.com/jjc914/ibdb/main/Server/DataProcessing/res/laq/qs/out/math/num%26alg/question0.png", 
         "https://raw.githubusercontent.com/jjc914/ibdb/main/Server/DataProcessing/res/laq/qs/out/math/num%26alg/question1.png",
@@ -13,6 +15,9 @@
 
 </script>
 
+<svelte:head>
+  <title>numbAndAlgo</title>
+</svelte:head>
 <style>
   .ans {
     width: 5vw;
@@ -34,52 +39,24 @@
     font-family: 'Roboto', sans-serif;
     color: white;
   }
-  .ansl {
-    width: 32%;
-  }
 </style>
 
-<svelte:head>
-  <title>index</title>
-</svelte:head>
 <div class="flex justify-center items-center h-screen back">
   <div
     class="flex flex-col border-2 backpeepee p-5 m-8 rounded-3xl drop-shadow-2xl">
-    <h1 class="text-2xl float-left">Question:</h1>
-    <br />
-    <img src={test} alt="question" class="rounded-xl" />
-    <br />
-    <div
-      class="flex w-3/4 space-x-4 m-auto object-center text-center
-      content-center flex-row">
-      <div class="flex flex-col ansl">
-        <h1 class="text-xl text-center">A</h1>
-        <button>
-          <div class="ans" />
-        </button>
+  <Carousel>
+      <div class="slide-content">
+        <img src="{questions[0]}"/>
       </div>
-      <div class="flex flex-col ansl">
-        <h1 class="text-xl text-center">B</h1>
-        <button>
-          <div class="ans" />
-        </button>
+</Carousel>
+<Carousel>
+      <div class="slide-content">
+        <img src="{questions[1]}"/>
       </div>
-      <div class="flex flex-col ansl">
-        <h1 class="text-xl text-center">C</h1>
-        <button>
-          <div class="ans" />
-        </button>
-      </div>
+</Carousel>
 
-      <div class="flex flex-col ansl">
-        <h1 class="text-xl text-center">D</h1>
-        <button>
-          <div class="ans" />
-        </button>
-      </div>
 
     </div>
 
     <br />
   </div>
-</div>

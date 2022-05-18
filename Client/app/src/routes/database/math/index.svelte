@@ -41,7 +41,7 @@
       <div
         class=" w-full m-auto items-center flex text-center justify-center
         flex-wrap">
-        <a href="">
+        <a href="/database/math/numbAndAlgo">
           <p>Numbers and Algorithms</p>
         </a>
         <a href="">
