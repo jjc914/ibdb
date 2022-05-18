@@ -38,8 +38,8 @@ class Level(Enum):
 
 def main():
     parser = argparse.ArgumentParser(description='Single parse IBDP past papers for multiple choice questions and answers.')
-    parser.add_argument('-q', dest='qPath', type=checkArgFileValue, help='fuck off')
-    parser.add_argument('-a', dest='aPath', type=checkArgFileValue, help='what did i tell u')
+    parser.add_argument('-q', dest='qPath', type=checkArgFileValue, help='')
+    parser.add_argument('-a', dest='aPath', type=checkArgFileValue, help='')
     parser.add_argument('-c', dest='classf', type=checkArgFileValue, help='the file that contains the classification data (automatically searches for classification.json in the working directory)')
     args = parser.parse_args()
 
