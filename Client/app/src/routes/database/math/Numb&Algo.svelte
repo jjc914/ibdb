@@ -1,5 +1,4 @@
 <script lang="ts">
-    import test from '../../Lib/SVG/test.png'
     import { user, isLoggedIn } from '../../../stores/authStore'
     const questions : string[] = [ 
         "https://raw.githubusercontent.com/jjc914/ibdb/main/Server/DataProcessing/res/laq/qs/out/math/num%26alg/question0.png", 
@@ -11,7 +10,6 @@
     const ans: string[] = [
 // TODO: josh i need the ans 
     ]
-  }
 
 </script>
 

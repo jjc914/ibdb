@@ -2,7 +2,12 @@
   import logo from '../Lib/SVG/database.svg'
   import game from '../Lib/SVG/game.svg'
   import { user, isLoggedIn } from '../stores/authStore'
-  
+  let userValue :any;
+
+  user.subscribe(value => {
+    userValue = value;
+  })
+  console.log($userValue, $isLoggedIn)
 </script>
 
 <style>

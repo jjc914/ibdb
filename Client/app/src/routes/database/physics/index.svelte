@@ -48,10 +48,10 @@
           <p>Circular Motion</p>
         </a>
         <a href="/database/physics/energyProdution">
-          <p>Energy Prodution/p>
+          <p>Energy Prodution</p>
         </a>
         <a href="/database/physics/measurementsAnduncertainty">
-          <p>measurementsAnduncertainty</p>
+          <p>Measurements and Uncertainty</p>
         </a>
         <a href="/database/physics/mechanics">
           <p>Mechanics</p>
@@ -65,6 +65,11 @@
         <a href="/database/physics/wavePhenomena">
           <p>Wave Phenomena</p>
         </a>
+        <a href="/database/physics/electricityAndmagnetism">
+          <p>Electricity and Magnetism</p>
+        </a>
+
+
       </div>
 
     </div>

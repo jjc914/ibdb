@@ -8,12 +8,9 @@
   const provider = new GoogleAuthProvider()
   const auth = getAuth()
   console.log($isLoggedIn)
-  var loading :boolean = false
    function signIn() {
-    loading = true
     signInWithPopup(auth, provider)
       .then((result) => {
-        //console.log(result.user)
         user.set(result.user)
         isLoggedIn.set(true)
         console.log($isLoggedIn)
@@ -29,7 +26,6 @@
         console.error(error)
       })
   }
-
 </script>
 
 <style>
