@@ -46,7 +46,7 @@ def main():
     if not args.qPath or not args.aPath:
         print("FAIL")
         return
-    
+
     classificationJson = None
     if not args.classf:
         args.classf = 'classification.json'
@@ -107,11 +107,11 @@ def extractQuestions(inPath, outPath, ms, document):
         pageData = document[i]['pageData']
 
         Logger.log(2, f"Page {i+1}/{doc.page_count}", Color.OKCYAN)
-        
+
         if i+1 == doc.page_count:
             ending = (page.rect.x1, page.rect.y1, page.rect.x1, page.rect.y1, "")
             pageData.append(ending)
-        
+
         # for each dataBox in the page
         for k, dataBox in enumerate(pageData):
             text = dataBox[4]
@@ -247,7 +247,11 @@ def classify(json, outDir, textData):
             os.mkdir(f'{outDir}out/{subject.value}')
         if not os.path.exists(f'{outDir}out/{subject.value}/{section[0]}'):
             os.mkdir(f'{outDir}out/{subject.value}/{section[0]}')
-        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/question{number}.png')
+        print(file)
+        # match = re.search(file, r'\/page\d+object\d+answer(.)\.png')
+        match = re.search(r'\/page\d+object\d+answer(.)\.png', file)
+        if not match: continue
+        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/question{number}answer{match.group(1)}.png')
         number += 1
 
 def checkArgFileValue(file):
