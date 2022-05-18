@@ -15,7 +15,8 @@
     position: absolute;
     padding: 1rem;
     padding-left: 2rem;
-    width: 10vw;
+    width: 5%;
+    z-index: 2;
   }
   
   .signout {

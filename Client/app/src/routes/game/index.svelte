@@ -3,11 +3,7 @@
   import discord from '../../Lib/SVG/discord.svg'
   import game from '../../Lib/SVG/game.svg'
   import { user, isLoggedIn } from '../../stores/authStore'
-  if (typeof window !== 'undefined') {
-    if ($isLoggedIn === false) {
-      window.location.replace('/')
-    }
-  }
+  
 </script>
 
 <style>
@@ -39,7 +35,7 @@
     <h1 class="text-white text-2xl">LeaderBoard</h1>
   </div>
   <div class="flex items flex-col text-center duration-750 ease-in-out transition hover:scale-90">
-    <a class="link" sveltekit:prefetch href="/game/game">
+    <a class="link" sveltekit:prefetch href="/game/topic">
       <img src={game} class="img drop-shadow-2xl flex" alt="logo" />
     </a>
     <br />

@@ -1,10 +1,5 @@
 <script>
-  import { user, isLoggedIn } from '../../stores/authStore'
-  if (typeof window !== 'undefined') {
-    if ($isLoggedIn === false) {
-      window.location.replace('/')
-    }
-  }
+  
 </script>
 
 <style>
@@ -20,11 +15,12 @@
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  <div class="flex p-5 w-10/12 rounded-3xl drop-shadow-2xl">
-    <div
-      class="flex text-neutral-100 w-full bg-neutral-700 p-5 rounded-3xl
-      drop-shadow-2xl ">
-      <table
+  <div
+    class="flex flex-col border-2 backpeepee p-5 m-8 rounded-3xl drop-shadow-2xl">
+    <h1 class="text-2xl float-left m-5 text-bold text-white">Work In progress...</h1>
+    <br />
+    </div>
+      <!-- <table
         class="w-full overflow-hidden align-middle border-gray-200 shadow
         sm:rounded-lg">
         <thead class="bg-neutral-500 ">
@@ -75,11 +71,9 @@
               class="text-sm text-gray-900 font-light px-6 py-4
               whitespace-nowrap">
               69%
-            </td>
+            </td> -->
 
-          </tr>
+          <!-- </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
-  </div>
-</div>
