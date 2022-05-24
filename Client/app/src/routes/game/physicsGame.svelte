@@ -47,7 +47,7 @@
 
 <div class="flex justify-center items-center h-screen back">
 <div class= "score">
-  <h1> <strong class="text-green-500">Correct: </strong>{ $correct} <strong class="text-red-500">Wrong: </strong>{$wrong} </h1>
+  <h1> <strong style="color: rgb(0,225,0);">Correct: </strong>{ $correct} <strong style="color: red;" >Wrong: </strong>{$wrong} </h1>
 </div>
   <div
     class="flex flex-col border-2 backpeepee p-5 m-10 rounded-3xl drop-shadow-2xl">
@@ -66,7 +66,7 @@
       </div>
       <div class="flex flex-col ansl">
         <h1 class="text-xl text-center">B</h1>
-        <button>
+        <button >
           <div class="ans" />
         </button>
       </div>
@@ -76,16 +76,13 @@
           <div class="ans" />
         </button>
       </div>
-
       <div class="flex flex-col ansl">
         <h1 class="text-xl text-center">D</h1>
         <button>
           <div class="ans" />
         </button>
       </div>
-
     </div>
-
     <br />
   </div>
 </div>
