@@ -1,3 +1,5 @@
+# python3 Server/DataProcessing/src/singlemcq.py -q Server/DataProcessing/res/mcq/qs/physics/PHYSICS-QS-MCQ-2016-MAY.pdf -a Server/DataProcessing/res/mcq/ms/physics/PHYSICS-ANS-MCQ-2016-MAY.pdf -c Server/DataProcessing/src/necond.json
+
 import os
 import sys
 import re
@@ -251,7 +253,8 @@ def classify(json, outDir, textData):
         # match = re.search(file, r'\/page\d+object\d+answer(.)\.png')
         match = re.search(r'\/page\d+object\d+answer(.)\.png', file)
         if not match: continue
-        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/question{number}answer{match.group(1)}.png')
+        name = file.replace('/', '')
+        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/{name}question{number}answer{match.group(1)}.png')
         number += 1
 
 def checkArgFileValue(file):

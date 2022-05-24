@@ -1,3 +1,6 @@
+# python3 Server/DataProcessing/src/batchlaq.py -d Server/DataProcessing/res/laq/qs/ -c Server/DataProcessing/src/necond.json -log 2
+# python3 Server/DataProcessing/src/batchlaq.py -d Server/DataProcessing/res/laq/ms/ -c Server/DataProcessing/src/necond.json -log 2
+
 import os
 import sys
 import re
@@ -123,11 +126,11 @@ def extractQuestions(inPath, outPath, document):
         pageData = document[i]['pageData']
 
         Logger.log(2, f"Page {i+1}/{doc.page_count}", Color.OKCYAN)
-        
+
         if i+1 == doc.page_count:
             ending = (page.rect.x1, page.rect.y1, page.rect.x1, page.rect.y1, "")
             pageData.append(ending)
-        
+
         # for each dataBox in the page
         for k, dataBox in enumerate(pageData):
             text = dataBox[4]
@@ -262,7 +265,8 @@ def classify(json, outDir, textData):
             os.mkdir(f'{outDir}out/{subject.value}')
         if not os.path.exists(f'{outDir}out/{subject.value}/{section[0]}'):
             os.mkdir(f'{outDir}out/{subject.value}/{section[0]}')
-        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/question{number}.png')
+        name = file.replace('/', '')
+        os.rename(file, f'{outDir}out/{subject.value}/{section[0]}/{name}question{number}.png')
         number += 1
 
 def getFileExtension(fileName):
