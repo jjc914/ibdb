@@ -10,7 +10,7 @@ the Arctesian
 
 export const physicsConstLink : string = "https://raw.githubusercontent.com/jjc914/ibdb/main/Server/DataProcessing/res/mcq/qs/out/phys/"
 
-export const allPhysicsQuestions : string[] = [
+export const allQuestions : string[] = [
     'atomicPhysics/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage10object10answerC.pngquestion13answerC.png',
     'atomicPhysics/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage22object17answerA.pngquestion38answerA.png',
     'electricityAndmagnetism/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage15object1answerB.pngquestion24answerB.png',
@@ -51,7 +51,7 @@ export const allPhysicsQuestions : string[] = [
     "wavePhenomena/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage14object7answerD.pngquestion23answerD.png",
     "wavePhenomena/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage8object2answerC.pngquestion10answerC.png",
 ]
-export const atomicPhysics : string[] = [
+export const atomic : string[] = [
     'atomicPhysics/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage10object10answerC.pngquestion13answerC.png',
     'atomicPhysics/ServerDataProcessingresmcqqsoutPHYSICS-QS-MCQ-2016-MAYpage22object17answerA.pngquestion38answerA.png'
 ]

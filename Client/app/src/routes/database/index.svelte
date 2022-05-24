@@ -82,7 +82,7 @@
 </style>
 
 <div class="flex justify-center items-center h-screen back">
-  <div class="backpeepee w-3/4 p-6 rounded-3xl ">
+  <div class="backpeepee w-3/4 h-3/4 p-6 rounded-3xl ">
     <div class="m-auto">
 
       <h1
@@ -111,7 +111,7 @@
         </a>
         <a href="">
           <p>Computer Science (Coming Soon)</p>
-        </a>
+        <!-- </a>
         <a href="">
           <p>Economics (Coming Soon)</p>
         </a>
@@ -132,7 +132,7 @@
         </a>
         <a href="">
           <p>Chinese B (Coming Soon)</p>
-        </a>
+        </a> -->
       </div>
 
     </div>

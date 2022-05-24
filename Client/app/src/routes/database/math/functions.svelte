@@ -1,24 +1,25 @@
 <script lang="ts">
     import { user, isLoggedIn } from '../../../stores/authStore'
     import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons' 
-    import { atomic, physicsConstLink } from '../../../Lib/Question/physics'
+    import { functions, functionsAns } from '../../../Lib/Question/math'
+ import All from './all.svelte';
  </script>
  
  <svelte:head>
-   <title>atomic</title>
+   <title>functions</title>
  </svelte:head>
  <style>
- div {
+  div {
     background-color: #272727;
  }
-   .pair {
+ .pair {
     flex-direction: column; 
     flex-wrap: wrap;
     width: 20%;
     margin: 1rem;
    }
    .ans {
-     width: 80rem;
+     width: 50rem;
      border-radius: 0.4rem;
      margin: 1rem;
 
@@ -39,12 +40,22 @@
    }
  </style>
  
- <div class="flex justify-center h-screen items-center back">
+ <div class="flex justify-center items-center back">
    <div class="pair">
-       <img src="{physicsConstLink + atomic[0]}" class="ans">
+       <img src="{functions[0]}" class="ans">
+       <img src="{functionsAns[0]}" class="ans">
    </div>
    <div class="pair">
-    <img src="{physicsConstLink + atomic[1]}" class="ans">
+     <img src="{functions[1]}" class="ans">
+     <img src="{functionsAns[1]}" class="ans">
+ </div>
+ <div class="pair">
+    <img src="{functions[2]}" class="ans">
+    <img src="{functionsAns[2]}" class="ans">
+</div>
+<div class="pair">
+    <img src="{functions[3]}" class="ans">
+    <img src="{functionsAns[3]}" class="ans">
 </div>
      <br />
    </div>

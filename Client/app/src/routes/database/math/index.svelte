@@ -41,20 +41,20 @@
       <div
         class=" w-full m-auto items-center flex text-center justify-center
         flex-wrap">
-        <a href="/database/math/numbAndAlgo">
+        <a href="/database/math/numAlg">
           <p>Numbers and Algorithms</p>
         </a>
-        <a href="">
+        <a href="/database/math/functions">
           <p>Functions</p>
         </a>
-        <a href="">
+        <a href="/database/math/geoTrig">
           <p>Geometry and Trignometry</p>
         </a>
-        <a href="">
+        <a href="/database/math/statProp">
           <p>Statistics and Probability</p>
         </a>
-        <a href="">
-          <p>Calculus</p>
+        <a href="/database/math/all">
+          <p>All math questions</p>
         </a>
       </div>
 
