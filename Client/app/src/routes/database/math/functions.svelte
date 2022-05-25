@@ -18,6 +18,9 @@
     width: 20%;
     margin: 1rem;
    }
+   .pair:hover{
+     width: 40%;
+   }
    .ans {
      width: 50rem;
      border-radius: 0.4rem;
@@ -40,7 +43,7 @@
    }
  </style>
  
- <div class="flex justify-center items-center back">
+ <div class="flex justify-center h-sccreen items-center back">
    <div class="pair">
        <img src="{functions[0]}" class="ans">
        <img src="{functionsAns[0]}" class="ans">

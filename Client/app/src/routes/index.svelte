@@ -4,7 +4,6 @@
   import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
   import { user, isLoggedIn } from "../stores/authStore";
   import { SyncLoader } from "svelte-loading-spinners";
-  // import { saveUser } from '../Lib../Lib/Firestore/usernst'
   const provider = new GoogleAuthProvider();
   const auth = getAuth();
   function signIn() {
@@ -29,7 +28,6 @@
   <title>index</title>
 </svelte:head>
 <div class="flex justify-center items-center h-screen back">
-  {#if (loading = true)}
     <button on:click={() => signIn()}>
       <div
         class="flex backpeepee p-3 rounded-3xl shadow-lg border-2 hover:border-4
@@ -46,11 +44,7 @@
         </p>
       </div>
     </button>
-  {/if}
-  <!-- </a> -->
-  {#if (loading = false)}
-    <SyncLoader size="10" color="white" unit="vw" />
-  {/if}
+  
 </div>
 
 <style>

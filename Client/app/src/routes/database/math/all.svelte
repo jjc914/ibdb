@@ -17,6 +17,10 @@
     flex-wrap: wrap;
     width: 20%;
     margin: 1rem;
+    transition-duration: 1s;
+   }
+   .pair:hover{
+     width: 40%;
    }
    .ans {
      width: 50rem;
@@ -41,6 +45,10 @@
  </style>
  
  <div class="flex justify-center items-center back">
+  <div class="pair">
+    <img src="{allQuestions[6]}" class="ans">
+    <img src="{allQuestionsAns[6]}" class="ans">
+</div>
    <div class="pair">
        <img src="{allQuestions[0]}" class="ans">
        <img src="{allQuestionsAns[0]}" class="ans">
@@ -66,16 +74,12 @@
     <img src="{allQuestionsAns[5]}" class="ans">
 </div>
 <div class="pair">
-    <img src="{allQuestions[6]}" class="ans">
-    <img src="{allQuestionsAns[6]}" class="ans">
+  <img src="{allQuestions[7]}" class="ans">
+  <img src="{allQuestionsAns[7]}" class="ans">
 </div>
 <div class="pair">
-    <img src="{allQuestions[7]}" class="ans">
-    <img src="{allQuestionsAns[7]}" class="ans">
-</div>
-<div class="pair">
-    <img src="{allQuestions[8]}" class="ans">
-    <img src="{allQuestionsAns[8]}" class="ans">
+  <img src="{allQuestions[8]}" class="ans">
+  <img src="{allQuestionsAns[8]}" class="ans">
 </div>
      <br />
    </div>

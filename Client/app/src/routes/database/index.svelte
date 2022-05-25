@@ -70,8 +70,8 @@
   a {
     background-color: #707070;
     color: #f0f0f0;
-    width: 20vw;
-    height: 10vw;
+    width: 30rem;
+    height: 5rem;
     display: flex;
     margin: 1vw;
     border-radius: 1rem;
@@ -82,8 +82,8 @@
 </style>
 
 <div class="flex justify-center items-center h-screen back">
-  <div class="backpeepee w-3/4 h-3/4 p-6 rounded-3xl ">
-    <div class="m-auto">
+  <div class="backpeepee w-3/4  justify-center h-3/4 p-6 rounded-3xl ">
+    <div class=" justify-center m-auto">
 
       <h1
         class="text-xl text-white text-center py-2 px-4 rounded-3xl

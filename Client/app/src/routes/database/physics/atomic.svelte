@@ -17,6 +17,9 @@
     width: 20%;
     margin: 1rem;
    }
+   .pair:hover{
+     width: 40%;
+   }
    .ans {
      width: 80rem;
      border-radius: 0.4rem;

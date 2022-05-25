@@ -16,6 +16,9 @@ import All from './all.svelte';
     width: 20%;
     margin: 1rem;
    }
+   .pair:hover{
+     width: 40%;
+   }
    .ans {
      width: 50rem;
      border-radius: 0.4rem;
@@ -41,7 +44,7 @@ import All from './all.svelte';
  }
 </style>
 
-<div class="flex justify-center  items-center back">
+<div class="flex justify-center h-screen items-center back">
   <div class="pair">
       <img src="{numAlg[0]}" class="ans">
       <img src="{numAlgAns[0]}" class="ans">
