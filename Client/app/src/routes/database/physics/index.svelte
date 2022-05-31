@@ -46,7 +46,7 @@
           <p>Atomic Physics</p>
         </a>
         
-        <a href="/database/physics/energyProdution">
+        <a href="/database/physics/energyProduction">
           <p>Energy Prodution</p>
         </a>
         <a href="/database/physics/measurementsAnduncertainty">
@@ -61,8 +61,8 @@
         <a href="/database/physics/thermal">
           <p>Thermal</p>
         </a>
-        <a href="/database/physics/wavePhenomena">
-          <p>Wave Phenomena</p>
+        <a href="/database/physics/waves">
+          <p>Waves</p>
         </a>
         <a href="/database/physics/electricityAndmagnetism">
           <p>Electricity and Magnetism</p>
