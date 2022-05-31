@@ -29,4 +29,4 @@ module.exports = __toCommonJS(stdin_exports);
 var module2 = __toESM(require("../entries/pages/database/physics/thermal.svelte.js"));
 const entry = "pages/database/physics/thermal.svelte-7f28b016.js";
 const js = ["pages/database/physics/thermal.svelte-7f28b016.js", "chunks/index-80d79615.js", "chunks/physics-1bcf352f.js"];
-const css = ["assets/pages/database/physics/mechanics.svelte-72d6449c.css"];
+const css = ["assets/pages/database/physics/energyProduction.svelte-aba23e99.css"];

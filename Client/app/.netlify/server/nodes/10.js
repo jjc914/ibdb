@@ -29,4 +29,4 @@ module.exports = __toCommonJS(stdin_exports);
 var module2 = __toESM(require("../entries/pages/database/physics/atomic.svelte.js"));
 const entry = "pages/database/physics/atomic.svelte-e5c37b8d.js";
 const js = ["pages/database/physics/atomic.svelte-e5c37b8d.js", "chunks/index-80d79615.js", "chunks/physics-1bcf352f.js"];
-const css = ["assets/pages/database/physics/electricityAndmagnetism.svelte-8f7dd857.css"];
+const css = ["assets/pages/database/physics/atomic.svelte-cceec333.css"];

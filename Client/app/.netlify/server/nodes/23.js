@@ -27,6 +27,6 @@ __export(stdin_exports, {
 });
 module.exports = __toCommonJS(stdin_exports);
 var module2 = __toESM(require("../entries/pages/game/physicsGame.svelte.js"));
-const entry = "pages/game/physicsGame.svelte-34456593.js";
-const js = ["pages/game/physicsGame.svelte-34456593.js", "chunks/index-80d79615.js", "chunks/authStore-2f226a02.js", "chunks/index-3b236717.js", "chunks/physics-1bcf352f.js"];
+const entry = "pages/game/physicsGame.svelte-32cf6a54.js";
+const js = ["pages/game/physicsGame.svelte-32cf6a54.js", "chunks/index-80d79615.js", "chunks/authStore-2f226a02.js", "chunks/index-3b236717.js", "chunks/physics-1bcf352f.js"];
 const css = ["assets/pages/game/physicsGame.svelte-e2c40afc.css"];

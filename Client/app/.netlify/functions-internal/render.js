@@ -5,7 +5,7 @@ exports.handler = init({
 	assets: new Set(["database.svg"]),
 	mimeTypes: {".svg":"image/svg+xml"},
 	_: {
-		entry: {"file":"start-89267cd8.js","js":["start-89267cd8.js","chunks/index-80d79615.js","chunks/index-3b236717.js"],"css":[]},
+		entry: {"file":"start-bc1df86c.js","js":["start-bc1df86c.js","chunks/index-80d79615.js","chunks/index-3b236717.js"],"css":[]},
 		nodes: [
 			() => Promise.resolve().then(() => require('../server/nodes/0.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/1.js')),
