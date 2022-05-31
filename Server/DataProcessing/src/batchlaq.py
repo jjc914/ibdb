@@ -254,7 +254,7 @@ def classify(json, outDir, textData):
                         #     subsubsectionWeights[subsubsection] += 1
                         # else:
                         #     subsubsectionWeights[subsubsection] = 1
-        print(file)
+        # print(file)
         sortedWeights = sorted(subsectionWeights.items(), key=lambda x: x[1], reverse=True)
         section = None
         if len(sortedWeights) <= 0:
