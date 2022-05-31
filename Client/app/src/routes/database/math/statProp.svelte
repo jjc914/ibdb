@@ -15,9 +15,11 @@ import All from './all.svelte';
     flex-wrap: wrap;
     width: 20%;
     margin: 1rem;
+    transition: all 0.2s ease-in-out;
    }
 
    .pair:hover{
+     transition: all 0.2s ease-in-out;
      width: 40%;
    }
    .ans {

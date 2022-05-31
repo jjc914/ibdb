@@ -24,6 +24,7 @@
     border-radius: 1rem;
   }
   a:hover {
+    transition: all 0.2s ease-in-out;
     background-color: #0b6386;
   }
 </style>
@@ -44,9 +45,7 @@
         <a href="/database/physics/atomic">
           <p>Atomic Physics</p>
         </a>
-        <a href="/database/physics/circularMotion">
-          <p>Circular Motion</p>
-        </a>
+        
         <a href="/database/physics/energyProdution">
           <p>Energy Prodution</p>
         </a>

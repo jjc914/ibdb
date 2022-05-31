@@ -1,0 +1,370 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.ts"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_database-e2a7071d.js"
+    ],
+    "css": [
+      "assets/entries/pages/__layout.svelte-d772ca49.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ]
+  },
+  "src/routes/Sorry.svelte": {
+    "file": "entries/pages/Sorry.svelte.js",
+    "src": "src/routes/Sorry.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/Sorry.svelte-6e381a5d.css"
+    ]
+  },
+  "src/routes/database/index.svelte": {
+    "file": "entries/pages/database/index.svelte.js",
+    "src": "src/routes/database/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/index.svelte-b89ce064.css"
+    ]
+  },
+  "src/routes/database/math/all.svelte": {
+    "file": "entries/pages/database/math/all.svelte.js",
+    "src": "src/routes/database/math/all.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_all.svelte_svelte_type_style_lang-8d2c7671.js"
+    ]
+  },
+  "src/routes/database/math/functions.svelte": {
+    "file": "entries/pages/database/math/functions.svelte.js",
+    "src": "src/routes/database/math/functions.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_all.svelte_svelte_type_style_lang-8d2c7671.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/math/functions.svelte-8169c5a5.css"
+    ]
+  },
+  "src/routes/database/math/geoTrig.svelte": {
+    "file": "entries/pages/database/math/geoTrig.svelte.js",
+    "src": "src/routes/database/math/geoTrig.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_all.svelte_svelte_type_style_lang-8d2c7671.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/math/geoTrig.svelte-83119517.css"
+    ]
+  },
+  "src/routes/database/math/index.svelte": {
+    "file": "entries/pages/database/math/index.svelte.js",
+    "src": "src/routes/database/math/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/math/index.svelte-dcad76e8.css"
+    ]
+  },
+  "src/routes/database/math/numAlg.svelte": {
+    "file": "entries/pages/database/math/numAlg.svelte.js",
+    "src": "src/routes/database/math/numAlg.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_all.svelte_svelte_type_style_lang-8d2c7671.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/math/numAlg.svelte-f36a5a90.css"
+    ]
+  },
+  "src/routes/database/math/statProp.svelte": {
+    "file": "entries/pages/database/math/statProp.svelte.js",
+    "src": "src/routes/database/math/statProp.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_all.svelte_svelte_type_style_lang-8d2c7671.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/math/statProp.svelte-a27f5b4f.css"
+    ]
+  },
+  "src/routes/database/physics/atomic.svelte": {
+    "file": "entries/pages/database/physics/atomic.svelte.js",
+    "src": "src/routes/database/physics/atomic.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/atomic.svelte-e8b8c7a6.css"
+    ]
+  },
+  "src/routes/database/physics/electricityAndmagnetism.svelte": {
+    "file": "entries/pages/database/physics/electricityAndmagnetism.svelte.js",
+    "src": "src/routes/database/physics/electricityAndmagnetism.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/atomic.svelte-e8b8c7a6.css"
+    ]
+  },
+  "src/routes/database/physics/energyProduction.svelte": {
+    "file": "entries/pages/database/physics/energyProduction.svelte.js",
+    "src": "src/routes/database/physics/energyProduction.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/energyProduction.svelte-f04f212c.css"
+    ]
+  },
+  "src/routes/database/physics/index.svelte": {
+    "file": "entries/pages/database/physics/index.svelte.js",
+    "src": "src/routes/database/physics/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/index.svelte-0acc3223.css"
+    ]
+  },
+  "src/routes/database/physics/measurementsAnduncertainty.svelte": {
+    "file": "entries/pages/database/physics/measurementsAnduncertainty.svelte.js",
+    "src": "src/routes/database/physics/measurementsAnduncertainty.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/energyProduction.svelte-f04f212c.css"
+    ]
+  },
+  "src/routes/database/physics/mechanics.svelte": {
+    "file": "entries/pages/database/physics/mechanics.svelte.js",
+    "src": "src/routes/database/physics/mechanics.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/energyProduction.svelte-f04f212c.css"
+    ]
+  },
+  "src/routes/database/physics/quantumAndnuclearPhysics.svelte": {
+    "file": "entries/pages/database/physics/quantumAndnuclearPhysics.svelte.js",
+    "src": "src/routes/database/physics/quantumAndnuclearPhysics.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/energyProduction.svelte-f04f212c.css"
+    ]
+  },
+  "src/routes/database/physics/thermal.svelte": {
+    "file": "entries/pages/database/physics/thermal.svelte.js",
+    "src": "src/routes/database/physics/thermal.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/energyProduction.svelte-f04f212c.css"
+    ]
+  },
+  "src/routes/database/physics/waves.svelte": {
+    "file": "entries/pages/database/physics/waves.svelte.js",
+    "src": "src/routes/database/physics/waves.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_physics-81f92c85.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/physics/energyProduction.svelte-f04f212c.css"
+    ]
+  },
+  "src/routes/database/topic.svelte": {
+    "file": "entries/pages/database/topic.svelte.js",
+    "src": "src/routes/database/topic.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/database/topic.svelte-ff0b5dd9.css"
+    ]
+  },
+  "src/routes/game/discord.svelte": {
+    "file": "entries/pages/game/discord.svelte.js",
+    "src": "src/routes/game/discord.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_discord-7711dd31.js"
+    ],
+    "css": [
+      "assets/entries/pages/game/discord.svelte-13e5c078.css"
+    ]
+  },
+  "src/routes/game/index.svelte": {
+    "file": "entries/pages/game/index.svelte.js",
+    "src": "src/routes/game/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_discord-7711dd31.js",
+      "_game-1959a02f.js"
+    ],
+    "css": [
+      "assets/entries/pages/game/index.svelte-b6fe1100.css"
+    ],
+    "assets": [
+      "assets/LeaderBoard-a951d02b.svg"
+    ]
+  },
+  "src/routes/game/leaderboard.svelte": {
+    "file": "entries/pages/game/leaderboard.svelte.js",
+    "src": "src/routes/game/leaderboard.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/game/leaderboard.svelte-b211c0bd.css"
+    ]
+  },
+  "src/routes/game/physicsGame.svelte": {
+    "file": "entries/pages/game/physicsGame.svelte.js",
+    "src": "src/routes/game/physicsGame.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_authStore-e3ad6758.js"
+    ],
+    "css": [
+      "assets/entries/pages/game/physicsGame.svelte-00cd9745.css"
+    ]
+  },
+  "src/routes/game/topic.svelte": {
+    "file": "entries/pages/game/topic.svelte.js",
+    "src": "src/routes/game/topic.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js"
+    ],
+    "css": [
+      "assets/entries/pages/game/topic.svelte-1559a527.css"
+    ]
+  },
+  "src/routes/home.svelte": {
+    "file": "entries/pages/home.svelte.js",
+    "src": "src/routes/home.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_database-e2a7071d.js",
+      "_game-1959a02f.js",
+      "_authStore-e3ad6758.js"
+    ],
+    "css": [
+      "assets/entries/pages/home.svelte-fedd9f6e.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-084db825.js",
+      "_authStore-e3ad6758.js"
+    ],
+    "css": [
+      "assets/entries/pages/index.svelte-7272c302.css"
+    ]
+  },
+  "_index-084db825.js": {
+    "file": "chunks/index-084db825.js"
+  },
+  "_database-e2a7071d.js": {
+    "file": "chunks/database-e2a7071d.js",
+    "assets": [
+      "assets/database-086b2ae7.svg"
+    ]
+  },
+  "_all.svelte_svelte_type_style_lang-8d2c7671.js": {
+    "file": "chunks/all.svelte_svelte_type_style_lang-8d2c7671.js",
+    "css": [
+      "assets/all.svelte_svelte_type_style_lang-a9a8a96e.css"
+    ]
+  },
+  "_physics-81f92c85.js": {
+    "file": "chunks/physics-81f92c85.js"
+  },
+  "_discord-7711dd31.js": {
+    "file": "chunks/discord-7711dd31.js",
+    "assets": [
+      "assets/discord-15d3d190.svg"
+    ]
+  },
+  "_game-1959a02f.js": {
+    "file": "chunks/game-1959a02f.js",
+    "assets": [
+      "assets/game-65acbe44.svg"
+    ]
+  },
+  "_authStore-e3ad6758.js": {
+    "file": "chunks/authStore-e3ad6758.js",
+    "imports": [
+      "_index-084db825.js"
+    ]
+  },
+  "src/hooks.ts": {
+    "file": "chunks/hooks-1c45ba0b.js",
+    "src": "src/hooks.ts",
+    "isDynamicEntry": true
+  }
+}
