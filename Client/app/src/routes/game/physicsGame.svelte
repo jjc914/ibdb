@@ -24,7 +24,7 @@
       correct.update((n) => n + 1);
       newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => n + 1);
       newQuestion();
     }
@@ -35,7 +35,7 @@
       correct.update((n) => n + 1);
       newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => n + 1);
       newQuestion();
     }
@@ -46,7 +46,7 @@
       correct.update((n) => n + 1);
       newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => n + 1);
       newQuestion();
     }
@@ -57,7 +57,7 @@
       correct.update((n) => +1);
       newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => +1);
       newQuestion();
     }
