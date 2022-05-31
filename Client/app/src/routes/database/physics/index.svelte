@@ -24,6 +24,7 @@
     border-radius: 1rem;
   }
   a:hover {
+    transition: all 0.2s ease-in-out;
     background-color: #0b6386;
   }
 </style>
@@ -44,10 +45,8 @@
         <a href="/database/physics/atomic">
           <p>Atomic Physics</p>
         </a>
-        <a href="/database/physics/circularMotion">
-          <p>Circular Motion</p>
-        </a>
-        <a href="/database/physics/energyProdution">
+        
+        <a href="/database/physics/energyProduction">
           <p>Energy Prodution</p>
         </a>
         <a href="/database/physics/measurementsAnduncertainty">
@@ -62,8 +61,8 @@
         <a href="/database/physics/thermal">
           <p>Thermal</p>
         </a>
-        <a href="/database/physics/wavePhenomena">
-          <p>Wave Phenomena</p>
+        <a href="/database/physics/waves">
+          <p>Waves</p>
         </a>
         <a href="/database/physics/electricityAndmagnetism">
           <p>Electricity and Magnetism</p>

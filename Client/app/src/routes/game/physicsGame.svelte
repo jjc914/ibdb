@@ -7,49 +7,59 @@
 
   let question: string = "";
   let ans: string = "";
-  onMount(async () => {
+  function newQuestion(){
     let index = Math.floor(Math.random() * allQuestions.length);
     question = physicsConstLink + allQuestions[index];
     console.log(question);
     let temp = question.slice(-5);
     ans = temp.charAt(0).toLocaleLowerCase();
-
     console.log(ans);
+  }
+  onMount(async () => {
+    newQuestion();
   });
   function ansA() {
     if (ans == "a") {
       alert("Ans was right");
       correct.update((n) => n + 1);
+      newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => n + 1);
+      newQuestion();
     }
   }
   function ansB() {
     if (ans == "b") {
       alert("Ans was right");
       correct.update((n) => n + 1);
+      newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => n + 1);
+      newQuestion();
     }
   }
   function ansC() {
     if (ans == "c") {
       alert("Ans was right");
       correct.update((n) => n + 1);
+      newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => n + 1);
+      newQuestion();
     }
   }
   function ansD() {
     if (ans == "d") {
       alert("Ans was right");
       correct.update((n) => +1);
+      newQuestion();
     } else {
-      alert("Ans was wrong");
+      alert("Ans was wrong, ans was" + ans);
       wrong.update((n) => +1);
+      newQuestion();
     }
   }
 </script>
